@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", 
+    {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-0 block dark:text-slate-100">Notification Manager</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">Apps</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Notification</li>
+                                </ol>
+                            </div>
+                           <!--<div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div><!--end container-->
+
+    
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14">         
+        <div class="grid lg:grid-cols-12 xl:grid-cols-12">
+            <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-9 xl:col-span-9 ">
+                <div class="card bg-opacity-0">
+                    <div class="card-header grid grid-cols-12 justify-start content-strech">
+                       <div class="col-span-3">
+                        <h4 class="font-medium dark:text-slate-300">Notifications</h4>
+                     </div>
+                         <div class="col-span-3">
+                        <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded hover:bg-gray-300 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-500 dark:hover:bg-gray-400 dark:focus:ring-white">
+                            Unread
+                            <span class="inline-flex items-center justify-center w-4 h-4 ml-2 text-xs font-semibold text-blue-600 bg-blue-100 rounded-full">
+                              3
+                            </span>
+                        </button>
+                        
+                     </div>
+                     <div class="col-span-2">
+                        <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded hover:bg-gray-300 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-500 dark:hover:bg-gray-400 dark:focus:ring-white">
+                            Read
+                            <span class="inline-flex items-center justify-center w-4 h-4 ml-2 text-xs font-semibold text-blue-600 bg-blue-100 rounded-full">
+                              4
+                            </span>
+                        </button>
+                     </div>
+                     <div class="col-span-2">
+                        <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded hover:bg-gray-300 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-500 dark:hover:bg-gray-400 dark:focus:ring-white">
+                            Mark All Read
+                            
+                        </button>
+                     </div>
+                     <div class="col-span-2">
+                        <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded hover:bg-gray-300 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-500 dark:hover:bg-gray-400 dark:focus:ring-white">
+                            Delete All Read
+                            
+                        </button>
+                     </div>
+                    </div>
+                    <div class="card-body mx-auto p-4" data-simplebar>
+                               <table>          
+                                    <tr class="">  
+                                    <div class="justify-between items-center p-4 bg-green-50 rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700 mb-3">
+                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-blue-600 dark:text-green-500 hover:underline">New Testing </a>
+                                         from Biya Merry
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                        
+                                    </div>
+                                    <span class="justify-center items-center text-gray-500 -mx-1.5 -my-1.5 mr-2 rounded-lg p-1.5 hover:bg-white inline-flex h-8 w-8 dark:text-white dark:hover:bg-gray-600 alert-hidden sm:order-last">
+                              
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-1 sm:mb-0">just now</span>
+                                    
+                                    
+                                </div>
+                            </tr>
+                            
+                                <tr class="">
+                                <div class="justify-between items-center p-4 bg-green-50 rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700 mb-3">
+                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-blue-600 dark:text-green-500 hover:underline">New Testing</a>
+                                         from Donald
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                    </div>
+                                    <span class="justify-center items-center text-gray-500 -mx-1.5 -my-1.5 mr-2 rounded-lg p-1.5 hover:bg-white inline-flex h-8 w-8 dark:text-white dark:hover:bg-gray-600 alert-hidden sm:order-last">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-1 sm:mb-0">just now</span>
+                                    
+                                    
+                                </div>
+                            </tr>
+                        
+                                <tr class="">
+                                    <div class="justify-between items-center p-4 bg-green-50 rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700 mb-3">
+                                        <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                            <a href="#" class="font-semibold text-blue-600 dark:text-green-500 hover:underline">New Testing  </a>
+                                             from William
+                                            <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                        </div>
+                                        <span class="justify-center items-center text-gray-500 -mx-1.5 -my-1.5 mr-2 rounded-lg p-1.5 hover:bg-white inline-flex h-8 w-8 dark:text-white dark:hover:bg-gray-600 alert-hidden sm:order-last">
+                              
+                                            <i class="fas fa-trash-alt"></i>
+                                        </span>
+                                        <span class="mb-1 text-xs font-normal text-gray-400 sm:order-1 sm:mb-0">2 minutes ago</span>
+                                        
+                                        
+                                    </div>
+                                </tr>
+                          
+                               <tr class="">
+                                <div class="justify-between items-center p-4 bg-white rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700 mb-3">
+                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-gray-600 dark:text-white hover:underline">Status Updated  </a>
+                                         by William regarding Refund #1234 which awaiting customer response
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                    </div>
+                                    <span class="justify-center items-center text-gray-500 -mx-1.5 -my-1.5 mr-2 rounded-lg p-1.5 hover:bg-gray-300 inline-flex h-8 w-8 dark:text-white dark:hover:bg-gray-600 alert-hidden sm:order-last">
+                              
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-1 sm:mb-0">2 hours ago</span>
+                                </div>
+                            </tr>
+
+                            <tr class="">
+                                <div class="justify-between items-center p-4 bg-white rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700 mb-3">
+                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-gray-600 dark:text-white hover:underline">Status Updated  </a>
+                                        by Biya Merry regarding Refund #1234 which awaiting customer response
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                    </div>
+                                    <span class="justify-center items-center text-gray-500 -mx-1.5 -my-1.5 mr-2 rounded-lg p-1.5 hover:bg-gray-300 inline-flex h-8 w-8 dark:text-white dark:hover:bg-gray-600 alert-hidden sm:order-last">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-1 sm:mb-0">5 hours ago</span>
+                                </div>
+                            </tr>
+
+                            <tr class="">
+                                <div class="justify-between items-center p-4 bg-white rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700 mb-3">
+                                   <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-gray-600 dark:text-white hover:underline">Status Updated  </a>
+                                        by Donald regarding Refund #1234 which awaiting customer response
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                    </div>
+                                    <span class="justify-center items-center text-gray-500 -mx-1.5 -my-1.5 mr-2 rounded-lg p-1.5 hover:bg-gray-300 inline-flex h-8 w-8 dark:text-white dark:hover:bg-gray-600 alert-hidden sm:order-last">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-1 sm:mb-0">14 hours ago</span>
+                                </div>
+                            </tr>
+
+                            <tr class="">
+                                <div class="justify-between items-center p-4 bg-white rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700 mb-3">
+                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-gray-600 dark:text-white hover:underline">Status Updated  </a>
+                                        by William regarding Refund #1234 which awaiting customer response
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                    </div>
+                                    <span class="justify-center items-center text-gray-500 -mx-1.5 -my-1.5 mr-2 rounded-lg p-1.5 hover:bg-gray-300 inline-flex h-8 w-8 dark:text-white dark:hover:bg-gray-600 alert-hidden sm:order-last">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-1 sm:mb-0">14 hours ago</span>
+                                </div>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div><!--end card--><!--end card-->
+            </div><!--end col-->    
+
+            <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-3 xl:col-span-3">
+                <div class="card">                    
+                    <div class="card-body border-b rounded border-dashed dark:border-gray-700">  
+                        <h6 class="font-semibold text-sm text-slate-400">Other Notifications</h6>                                                          
+                    </div><!--end card-body-->
+                    <div class="card-body">  
+                        <ul class="list-none mb-3">
+                            <li class="mb-2"><i class="fa-solid fa-cake-candles text-slate-400 mr-2"></i>
+                                <span class="text-slate-500 text-sm">Birthdays</span>
+                            </li>
+                            
+                        </ul>  
+                        <div class="flex -space-x-4">
+                            <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/users/avatar-3.jpg" alt="">
+                            <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/users/avatar-5.jpg" alt="">
+                            <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/users/avatar-7.jpg" alt="">
+                            <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+2</a>
+                            
+                        </div>       
+                        <div><a href="#" class="text-slate-500 text-sm  hover:text-blue-500">Aravind, Mahesh, Rijo and 2 others are having birthday today.</a></div>              
+                        <ul class="list-none mb-3 mt-5">
+                            <li class="mb-2"><i class="fas fa-users text-slate-400 mr-2"></i>
+                                <span class="text-slate-500 text-sm">Meetings</span>
+                                <div class="mt-2"><a href="#" class="text-slate-500 text-sm hover:text-green-500">Two meetings scheduled today.</a></div>
+                            </li>
+                            
+                        </ul> 
+                   
+                    </div><!--end card-body-->
+                   
+                                                                               
+                   
+                                                                 
+                    </div><!--end card-body-->
+                </div><!--end card-->
+            </div><!--end col-->
+
+
+
+
+
+        </div><!--end inner-grid-->
+      
+    </div><!--end container-->
+
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/pages/components.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+    <link rel="stylesheet" href="assets/libs/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block  dark:text-slate-100">Sweet Alerts</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Sweet Alerts</li> 
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Trigger modal And Trigger toast</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <button type="button" data-swal-template="#my-template" onclick="executeExample('TriggerModalToast')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                        <button type="button" data-swal-toast-template="#my-template" onclick="executeExample('TriggerModalToast')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                        <template id="my-template">
+                            <swal-title>
+                              Save changes to "Untitled 1" before closing?
+                            </swal-title>
+                            <swal-icon type="warning" color="red"></swal-icon>
+                            <swal-button type="confirm">
+                              Save As
+                            </swal-button>
+                            <swal-button type="cancel">
+                              Cancel
+                            </swal-button>
+                            <swal-button type="deny">
+                              Close without Saving
+                            </swal-button>
+                            <swal-param name="allowEscapeKey" value="false" />
+                            <swal-param
+                              name="customClass"
+                              value='{ "popup": "my-popup" }' />
+                          </template>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Icons</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <button type="button" onclick="executeExample('success')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Success</button>
+                        <button type="button" onclick="executeExample('error')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Error</button>
+                        <button type="button" onclick="executeExample('warning')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Warning</button>
+                        <button type="button" onclick="executeExample('info')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Info</button>
+                        <button type="button" onclick="executeExample('question')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Question</button>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-12 xl:col-span-12 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Examples</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
+                            <div class="overflow-hidden">
+                                <table class="min-w-full">                                    
+                                    <tbody>
+                                        <!-- 1 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A basic message
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('basicMessage')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr> 
+                                        <!-- 2 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A title with a text under
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('titleText')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 3 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A modal with a title, an error icon, a text, and a footer
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('errorType')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 4 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                Custom HTML description and buttons with ARIA labels
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('customHtml')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 5 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A dialog with three buttons
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('threeButtons')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 6 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A custom positioned dialog
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('customPosition')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 7 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                Custom animation with Animation
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('customAnimation')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 8 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A confirm dialog, with a function attached to the "Confirm"-button...
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('warningConfirm')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 9 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                ... and by passing a parameter, you can execute something else for "Cancel".
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('handleDismiss')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 10 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A message with a custom image
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('customImage')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 11 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A message with custom width, padding, background and animated Nyan Cat
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('customWidth')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 12 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                A message with auto close timer
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('timer')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 13 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                Right-to-left support for Arabic, Persian, Hebrew, and other RTL languages
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('rtl')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 14 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                Mixin example
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('mixin')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 15 -->
+                                        <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                            <td class="p-3 text-sm text-gray-700 whitespace-nowrap dark:text-gray-400">
+                                                Declarative template example
+                                            </td>
+                                            <td class="p-3 text-sm font-medium text-gray-600 whitespace-nowrap dark:text-gray-400 text-right">
+                                                <button type="button" onclick="executeExample('declarativeTemplate')" class="focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Click me</button>
+                                            </td>
+                                        </tr>                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->           
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/sweetalert2/sweetalert2.all.min.js"></script> 
+    <script src="assets/js/pages/sweetalert.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

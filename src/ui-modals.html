@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-0 block dark:text-slate-100">Modals</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Modals</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Modal Sizing</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <a href="#modalstandard" data-modal-toggle="modal" class="mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Standerd</a>
+                        <a href="#smallmodal"data-modal-toggle="modal" class="mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Small</a>
+                        <a href="#largemodal" data-modal-toggle="modal" class="mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Large</a>
+                        <a href="#extralargemodal" data-modal-toggle="modal" class="mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Extra Large</a>
+                        <a href="#fullwidthmodal" data-modal-toggle="modal" class="mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Ful Width</a>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Modal Position</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body gap-5">
+                        <a href="#modalcenter" data-modal-toggle="modal" class=" mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Center Modal</a>
+                        <a href="#modaltop"data-modal-toggle="modal" class=" mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Top Modal</a>
+                        <a href="#modalbottom" data-modal-toggle="modal" class=" mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Bottom Modal</a>
+                        <a href="#modalright" data-modal-toggle="modal" class=" mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Rightbar Modal</a>
+                        <a href="#modalstatic" data-modal-toggle="modal" class=" mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Static Modal</a>
+                        <a href="#modalscrollable" data-modal-toggle="modal" class=" mb-1 inline-block focus:outline-none  focus:text-black hover:text-black dark:bg-slate-700 dark:text-slate-300 dark:hover:text-slate-200  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm font-medium py-2 px-3 rounded">Scrollable Modal</a>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    <!-- Standard Modal -->
+    <div class="modal fade" id="modalstandard">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title mt-0" id="staticBackdropLabel1">Modal Heading</h6>
+                    <button type="button" class="btn-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body leading-relaxed">
+                    <p class="font-medium">Title Text</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, pariatur.</p>
+                    <br />
+                    <p class="font-medium">SubTitle Text</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos voluptas saepe officia! Aperiam deleniti laboriosam quo neque non quia, facere, dignissimos impedit fuga hic at culpa iusto similique ad laudantium
+                        nesciunt, error consectetur voluptatem ipsa vitae accusamus eaque nihil!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Small Modal -->
+     <div class="modal fade" id="smallmodal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title mt-0">Modal Heading</h6>
+                    <button type="button" class="btn-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p> ... </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Large Modal -->
+     <div class="modal fade" id="largemodal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title mt-0">Large Modal Heading</h6>
+                    <button type="button" class="btn-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate quae nisi?
+                        Beatae aspernatur voluptatum dicta, ex officia reiciendis ipsam. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extra Large Modal -->
+    <div class="modal fade" id="extralargemodal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title mt-0">Extra Large Modal Heading</h6>
+                    <button type="button" class="btn-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolores
+                        optio, ab adipisci autem consequatur pariatur nisi. Dolorum, quos porro. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Width Modal -->
+    <div class="modal fade" id="fullwidthmodal">
+        <div class="modal-dialog modal-fullwidth">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title mt-0">Full Width Modal Heading</h6>
+                    <button type="button" class="btn-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p>...</p>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+   
+
+    
+    <!-- Right Modal -->
+    <div class="modal" id="modalright">
+        <div class="modal-dialog modal-right">
+            <div class="modal-content border-0 text-center shadow-none h-full my-auto">
+                <div class="my-auto mx-auto">
+                    <div class="modal-header border-b-0 mx-auto">
+                        <h6 class="modal-title" id="staticBackdropLabel2">Modal Heading</h6>
+                        <button type="button" class="btn-close fixed top-5 right-5" data-bs-dismiss="modal"
+                            aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <p>...</p>
+                    </div>
+                    <div class="modal-footer border-t-0">
+                        <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom Modal -->
+    <div class="modal fade" id="modalbottom">
+        <div class="modal-dialog modal-sm modal-bottom">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="staticBackdropLabel3">Modal bottom</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- top Modal -->
+    <div class="modal fade" id="modaltop">
+        <div class="modal-dialog  modal-top">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="staticBackdropLabel4">Top Modal</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Center Modal -->
+    <div class="modal fade" id="modalcenter">
+        <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="staticBackdropLabel5">Center Modal</h6>
+                    <button type="button" class="btn-close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p class="font-medium">Overflowing text to show scroll behavior</p>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+                        facilisis
+                        in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Static Modal -->
+    <div class="modal fade" id="modalstatic" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title mt-0" id="staticBackdropLabel6">Modal Heading</h6>
+                    <button type="button" class="btn-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p> I will not close if you click outside me. Don't even try to press escape key. </p>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                        ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                        truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                        bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scrollable Modal -->
+    <div class="modal fade" id="modalscrollable">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="staticBackdropLabel7">Modal Heading</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body  text-muted leading-relaxed">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, nesciunt laborum,
+                        commodi recusandae ab nobis iusto et dolorum omnis quisquam beatae ipsa sunt quod
+                        distinctio numquam maiores sequi perspiciatis qui tempora quas.
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, commodi.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="focus:outline-none text-white bg-red-500 hover:bg-red-600  font-medium rounded text-sm px-3 py-2 mr-2 dark:bg-red-500 dark:hover:bg-red-600  close"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600  font-medium rounded text-sm px-3 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none  my-auto">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="modal-overlay"></div>
+    <div class="rightbar-overlay"></div>
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/pages/components.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

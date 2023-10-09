@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block dark:text-slate-100">Files</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Files</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Upload File</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-3 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title dark:text-slate-300">Files</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">                        
+                        <div class="p-4 bg-gray-50 rounded dark:bg-slate-900/20 mb-4">
+                            <div class="flex justify-between">
+                                <div>
+                                    <h5 class="m-0 font-medium -mb-1 dark:text-slate-300">Plan Files</h5>
+                                    <small class="text-xs text-slate-400">80GB/200GB Used</small>
+                                </div>
+                                <div class="focus:outline-none text-[11px] bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 rounded font-medium py-[2px] px-2 self-center">23</div>
+                            </div>                            
+                        </div>
+                        
+                        <div class="p-4 bg-gray-50 rounded dark:bg-gray-800 dark:bg-slate-900/20 mb-4">
+                            <div class="flex justify-between">
+                                <div>
+                                    <h5 class="m-0 font-medium -mb-1 dark:text-slate-300">Project Files</h5>
+                                    <small class="text-xs text-slate-400">155GB/200GB Used</small>
+                                </div>
+                                <div class="focus:outline-none text-[11px] bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 rounded font-medium py-[2px] px-2 self-center">36</div>
+                            </div>                            
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded dark:bg-gray-800 dark:bg-slate-900/20 mb-4">
+                            <div class="flex justify-between">
+                                <div>
+                                    <h5 class="m-0 font-medium -mb-1 dark:text-slate-300">PDF Files</h5>
+                                    <small class="text-xs text-slate-400">05GB/200GB Used</small>
+                                </div>
+                                <div class="focus:outline-none text-[11px] bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 rounded font-medium py-[2px] px-2 self-center">51</div>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium text-slate-700 dark:text-white">620GB / 1TB Used</span>
+                            <span class="text-sm font-medium text-slate-700 dark:text-white">45%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 45%"></div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-8 xl:col-span-9 ">
+                
+                
+                <div class="card">                    
+                    <div class="card-body">
+                        <div class="mb-4 border-b-2 border-gray-100 dark:border-slate-700">
+                            <ul class="flex flex-wrap text-sm font-medium text-center -mb-[2px]" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block p-4 rounded-t border-b-2 font-medium" id="PlanFiles-tab" data-tabs-target="#PlanFiles" type="button" role="tab" aria-controls="PlanFiles" aria-selected="false">Plan Files</button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block p-4 rounded-t-lg border-b-2 font-medium hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Projects-tab" data-tabs-target="#Projects" type="button" role="tab" aria-controls="Projects" aria-selected="false">Projects</button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block p-4 rounded-t-lg border-b-2 font-medium hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="PDF_Files-tab" data-tabs-target="#PDF_Files" type="button" role="tab" aria-controls="PDF_Files" aria-selected="false">PDF Files</button>
+                                </li>
+                                <li role="presentation">
+                                    <button class="inline-block p-4 rounded-t-lg border-b-2 font-medium hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="FileLock-tab" data-tabs-target="#FileLock" type="button" role="tab" aria-controls="FileLock" aria-selected="false">File Lock</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="myTabContent">
+                            <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="PlanFiles" role="tabpanel" aria-labelledby="PlanFiles-tab">
+                                <h4 class="card-title dark:text-slate-300 mb-4">Design Plan files</h4>
+                                <div class="gap-3 flex flex-wrap">
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-pdf text-cyan-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">Adharcard_update</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-code text-red-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">Pancard</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-archive text-orange-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">ICICI_statment</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file text-slate-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">March_Invoice</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div>
+                                </div>
+                                <h4 class="card-title dark:text-slate-300 my-4">Realestate Plan files</h4>
+                                <div class="gap-3 flex flex-wrap">                                    
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-code text-red-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">Pancard</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-archive text-orange-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">ICICI_statment</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file text-slate-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">March_Invoice</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div>
+                                </div>
+                                <h4 class="card-title dark:text-slate-300 my-4">Garden Plan files</h4>
+                                <div class="gap-3 flex flex-wrap">
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-code text-red-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">Pancard</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-archive text-orange-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">ICICI_statment</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="Projects" role="tabpanel" aria-labelledby="Projects-tab">
+                                <h4 class="card-title dark:text-slate-300 mb-4">Projects</h4>
+                                <div class="gap-3 flex flex-wrap">                                    
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-code text-purple-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">Pancard</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-archive text-orange-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">ICICI_statment</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file text-slate-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">March_Invoice</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="PDF_Files" role="tabpanel" aria-labelledby="PDF_Files-tab">
+                                <h4 class="card-title dark:text-slate-300 mb-4">PDF Files</h4>
+                                <div class="gap-3 flex flex-wrap">   
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-code text-pink-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">Pancard</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                    <div class="border border-slate-200 dark:border-slate-700 rounded p-5 h-40 w-40 inline-block cursor-pointer">
+                                        <a href="#" class="relative text-xs -top-3 left-28">
+                                            <i class="las la-download dark:text-slate-400 text-sm"></i>
+                                        </a>
+                                        <div class="text-center">
+                                            <i class="lar la-file-archive text-slate-500 text-4xl"></i>
+                                            <h6 class="truncate font-medium dark:text-slate-300 text-sm">ICICI_statment</h6>
+                                            <small class="text-slate-400">06 March 2022 / 5MB</small>
+                                        </div>                                                        
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="hidden p-4 bg-gray-50 rounded w-96 mx-auto dark:bg-gray-900/20" id="FileLock" role="tabpanel" aria-labelledby="FileLock-tab">
+                                <div class="text-center mx-auto">
+                                    <span class="inline-flex justify-center items-center w-16 h-16  my-8 bg-pink-100 rounded-full ring-8 ring-white dark:ring-slate-800 dark:bg-pink-500/10">
+                                        <i class="ti ti-lock text-3xl text-pink-500"></i>
+                                    </span>
+                                    <div class="flex mt-5">
+                                        <input type="password" id="file-Lock" aria-describedby="button-addon2" class="rounded-none rounded-l bg-gray-50/5 border border-gray-300 text-gray-900 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm  p-2.5  dark:bg-slate-800 dark:border-slate-600 dark:placeholder-gray-400 dark:text-white  dark:focus:border-blue-500 focus-visible:outline-none" placeholder="Password">
+                                        <button type="button" id="button-addon2" data-clipboard-action="cut" data-clipboard-target="#file-Lock" class="copy_cut inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-r border border-l-0 border-gray-300 dark:bg-slate-600 dark:text-gray-400 dark:border-slate-600">
+                                            <i class="ti ti-key"></i>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="mt-2 ml-auto block text-right text-xs text-blue-500">Forget Password?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/pages/components.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

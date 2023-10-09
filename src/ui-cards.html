@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-0 block dark:text-slate-100">Cards</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Cards</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-3 ">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="flex justify-end">
+                            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="hidden sm:inline-block text-gray-500 dark:text-gray-400  focus:outline-none rounded text-sm p-1.5" type="button">
+                                <i class="fas fa-ellipsis-vertical text-lg"></i>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown" class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                                <ul class="py-1" aria-labelledby="dropdownButton">
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center pb-4">
+                            <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="assets/images/users/avatar-5.jpg" alt="Bonnie image"/>
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+                            <span class="text-sm text-gray-500 dark:text-gray-400 font-medium">Frontend Designer</span>
+                            <p class="font-normal mt-4 text-gray-500 text-sm dark:text-gray-400 text-center">
+                                Some quick example text the bulk of the card's content. It is a long established fact that.
+                            </p>
+                            <div class="flex mt-4 space-x-3 lg:mt-6">
+                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
+                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-900 bg-white rounded border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">Message</a>
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-3 ">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <a href="#" class="block mb-3 text-[20px] font-medium tracking-tight text-gray-800 dark:text-white">Popular admin template you can use for your business.</a>
+                        <p class="font-normal text-gray-500 text-sm dark:text-gray-400">
+                            Some quick example text the bulk of the card's content. It is a long established fact that a reader will be distracted by the readable content.
+                        </p>
+                        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded hover:bg-blue-600 mt-4">
+                            Read more
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#" class="block mb-3 text-[20px] font-medium tracking-tight text-gray-800 dark:text-white">Popular admin template you can use for your business.</a>
+                        <p class="font-normal text-gray-500 text-sm dark:text-gray-400">
+                            Some quick example text the bulk of the card's content. It is a long established fact that.
+                        </p>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-3 ">
+                <div class="card">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="assets/images/widgets/c.gif" alt="" />
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="mb-3 block text-[20px] font-medium tracking-tight text-gray-800 dark:text-white">Popular admin template you can use for your business.</a>
+                        <p class="font-normal text-gray-500 text-sm dark:text-gray-400">
+                            Some quick example text the bulk of the card's content. It is a long established fact that a reader will be distracted by the readable content.
+                        </p>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-3 ">
+                <div class="card">
+                    <a href="#" class="">
+                        <img class="rounded-t-lg mt-7" src="assets/images/widgets/ill-2.png" alt="" />
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="mb-3 block text-[20px] font-medium tracking-tight text-gray-800 dark:text-white">Popular admin template you can use for your business.</a>
+                        <p class="font-normal text-gray-500 text-sm dark:text-gray-400">
+                            Some quick example text the bulk of the card's content. It is a long established fact that a reader will be distracted by the readable content.
+                        </p>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->      
+        </div><!--end inner-grid-->
+        <div class="grid md:grid-cols-12 lg:grid-cols-8 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card flex flex-col items-center md:flex-row md:max-w-xl">
+                    <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="assets/images/widgets/nft-7.png" alt="">
+                    <div class="card-body flex flex-col justify-between leading-normal">
+                        <a href="#" class="mb-3 block text-[20px] font-medium tracking-tight text-gray-800 dark:text-white">Popular admin template you can use for your business.</a>
+                        <p class="font-normal text-gray-500 text-sm dark:text-gray-400">
+                            Some quick example text the bulk of the card's content. It is a long established fact that a reader.
+                        </p>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card flex flex-col items-center md:flex-row md:max-w-xl">
+                    <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="assets/images/widgets/nft-5.png" alt="">
+                    <div class="card-body flex flex-col justify-between leading-normal">
+                        <a href="#" class="mb-3 block text-[20px] font-medium tracking-tight text-gray-800 dark:text-white">Popular admin template you can use for your business.</a>
+                        <p class="font-normal text-gray-500 text-sm dark:text-gray-400">
+                            Some quick example text the bulk of the card's content. It is a long established fact that a reader.
+                        </p>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card flex flex-col items-center md:flex-row md:max-w-xl">
+                    <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="assets/images/widgets/nft-3.png" alt="">
+                    <div class="card-body flex flex-col justify-between leading-normal">
+                        <a href="#" class="mb-3 block text-[20px] font-medium tracking-tight text-gray-800 dark:text-white">Popular admin template you can use for your business.</a>
+                        <p class="font-normal text-gray-500 text-sm dark:text-gray-400">
+                            Some quick example text the bulk of the card's content. It is a long established fact that a reader.
+                        </p>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <div class="grid lg:grid-cols-8 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Sign in to our platform</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <form class="space-y-6" action="#">
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus-visible:outline-none" placeholder="name@company.com" required>
+                            </div>
+                            <div>
+                                <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
+                                <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300  text-gray-900 text-sm rounded-lg  focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus-visible:outline-none" required>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input id="remember" type="checkbox" name="checkbox-1" value="1"
+                                        class="custom w-5 h-5 text-blue-600 bg-gray-100 rounded border-gray-300 
+                                        shadow-none 
+                                        focus:ring-transparent dark:bg-gray-700 dark:border-gray-600">
+                                    </div>
+                                    <div class="ml-3 text-sm">
+                                    <label for="remember" class="font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                                    </div>
+                                </div>
+                                <a href="#" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+                            </div>
+                            <button type="submit" class="w-full text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
+                            <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                                Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+                            </div>
+                        </form>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Reports overview</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <h2 class="text-3xl font-medium mb-4 dark:text-slate-300">$8836.68</h2>
+                        <div class="w-full mx-auto mb-2">                        
+                            <div class="flex items-center">
+                                <div class="w-1/4 bg-blue-500 h-2 rounded-tl rounded-bl mr-0.5"></div>
+                                <div class="w-1/4 bg-gray-200 h-2 mr-0.5 relative">
+                                    <div class="h-2 bg-yellow-500"></div>
+                                </div>
+                                <div class="w-1/4 bg-gray-200 dark:bg-slate-700 h-2 mr-0.5 relative">
+                                    <div class="h-2 w-1/2 bg-pink-500"></div>
+                                </div>
+                                <div class="w-1/4 bg-gray-200 dark:bg-slate-700 h-2 rounded-tr rounded-br"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
+                                    <div class="overflow-hidden">
+                                        <table class="min-w-full">
+                                            <thead class="bg-gray-50 dark:bg-gray-700">
+                                                <tr>
+                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                                        Device
+                                                    </th>
+                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                                        Amount
+                                                    </th>
+                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                                       % Change
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Product 1 -->
+                                                <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                                    <td class="p-3 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center">
+                                                        <span class="w-1 h-1 rounded-full bg-blue-500 relative inline-block self-center mr-2"></span> Gross value
+                                                    </td>
+                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                       $6,543.55
+                                                    </td>
+                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400 text-right">
+                                                        <span class="focus:outline-none text-[12px] bg-green-100 text-green-700 dark:text-green-600 rounded font-medium py-1 px-2">+6.8</span>
+                                                    </td>
+                                                </tr>
+                                                <!-- Product 2 -->
+                                                <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                                    <td class="p-3 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center">
+                                                        <span class="w-1 h-1 rounded-full bg-yellow-500 relative inline-block self-center mr-2"></span> Net volume from sales
+                                                    </td>
+                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                        $3,654.21
+                                                     </td>
+                                                     <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400 text-right">
+                                                         <span class="focus:outline-none text-[12px] bg-blue-100 text-blue-700 dark:text-blue-600 rounded font-medium py-1 px-2">+4.5</span>
+                                                     </td>
+                                                </tr>
+                                                <!-- Product 2 -->
+                                                <tr class="bg-white dark:bg-gray-800">
+                                                    <td class="p-3 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center">
+                                                        <span class="w-1 h-1 rounded-full bg-pink-500 relative inline-block self-center mr-2"></span> Other
+                                                    </td>
+                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                        $563.20
+                                                     </td>
+                                                     <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400 text-right">
+                                                         <span class="focus:outline-none text-[12px] bg-pink-100 text-pink-700 dark:text-pink-600 rounded font-medium py-1 px-2">-1.2</span>
+                                                     </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-8 xl:col-span-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Reports overview</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="flow-root">
+                            <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                                <li class="pb-3 sm:pb-4">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <img class="w-8 h-8 rounded-full" src="assets/images/users/avatar-1.jpg" alt="Neil image">
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                                Allen Durkee
+                                            </p>
+                                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                                email@example.com
+                                            </p>
+                                        </div>
+                                        <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                            <a href="#" class="inline-flex items-center py-1 px-2 text-xs font-medium text-center text-gray-900 bg-white rounded border border-gray-300 hover:bg-gray-100  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 ">Message</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-3 sm:py-4">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <img class="w-8 h-8 rounded-full" src="assets/images/users/avatar-2.jpg" alt="Bonnie image">
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                                Jessica Webster
+                                            </p>
+                                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                                email@example.com
+                                            </p>
+                                        </div>
+                                        <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                            <a href="#" class="inline-flex items-center py-1 px-2 text-xs font-medium text-center text-gray-900 bg-white rounded border border-gray-300 hover:bg-gray-100  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 ">Message</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-3 sm:py-4">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <img class="w-8 h-8 rounded-full" src="assets/images/users/avatar-3.jpg" alt="Michael image">
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                                Cheryl Garrett
+                                            </p>
+                                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                                email@example.com
+                                            </p>
+                                        </div>
+                                        <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                            <a href="#" class="inline-flex items-center py-1 px-2 text-xs font-medium text-center text-gray-900 bg-white rounded border border-gray-300 hover:bg-gray-100  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 ">Message</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-3 sm:py-4">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <img class="w-8 h-8 rounded-full" src="assets/images/users/avatar-4.jpg" alt="Lana image">
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                                Mariana Hayes
+                                            </p>
+                                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                                email@example.com
+                                            </p>
+                                        </div>
+                                        <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                            <a href="#" class="inline-flex items-center py-1 px-2 text-xs font-medium text-center text-gray-900 bg-white rounded border border-gray-300 hover:bg-gray-100  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 ">Message</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                       </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

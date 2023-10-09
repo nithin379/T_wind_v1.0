@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+    <link rel="stylesheet" href="assets/libs/uppy/uppy.min.css">
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block dark:text-slate-100">Uploads</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Uploads</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Custom File Upload</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="d-grid">
+                            <p class="text-slate-400 mb-4">Upload your blog image here, Please click "Upload Image" Button.</p>
+                            <div class="preview-box block justify-center rounded overflow-hidden bg-slate-50 dark:bg-slate-900/20 p-4 mb-4"></div>
+                            <input type="file" id="input-file" name="input-file" accept="image/*" onchange={handleChange()} hidden />
+                            <label class="btn-upload px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600 mt-4" for="input-file">Upload Image</label>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Uppy File Upload</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div id="drag-drop-area"></div>  
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->    
+            <div class="hidden" id="tpl">
+                <div class="card mt-1 mb-0 shadow-none border dropzone-previews" >
+                    <div class="p-2">
+                        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+                            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                                <img data-dz-thumbnail src="#" class="w-8 h-8 rounded bg-slate-50" alt="">
+                            </div>
+                            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                                <a href="javascript:void(0);" class="text-slate-400 font-bold" data-dz-name></a>
+                                <p class="mb-0" data-dz-size></p>
+                                <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+                            </div>
+                            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                                <a class="btn btn-link px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600" data-dz-remove>
+                                    <i class="fas fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>        
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')   
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/uppy/uppy.min.js"></script>
+    <script src="assets/js/pages/upload.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

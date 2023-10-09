@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+    <link rel="stylesheet" href="assets/libs/fullcalendar/main.min.css">
+    @@include('./partials/head-css.html')
+   
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-0 block dark:text-slate-100">Calendar</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">Apps</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Calendar</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-3 ">
+                <div class="card h-full">
+                    <div class="card-body">
+                        <img class="" src="assets/images/widgets/calendar.svg" alt=""> 
+
+                        <ul class="list-group">
+                            <li class="list-group-item items-center flex border-b border-dashed border-slate-200 dark:border-slate-700">
+                                <div class="flex items-center my-4">
+                                    <div class="w-9 h-9 rounded">
+                                        <img class="w-full h-full overflow-hidden object-cover rounded object-center" src="assets/images/users/avatar-1.jpg" alt="logo" />
+                                    </div>
+                                    <div class="ml-2">
+                                        <a class="cursor-pointer hover:text-gray-900 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none">
+                                            <h5 class=" font-medium text-sm">Meeting with UI/UX Designers</h5>
+                                        </a>
+                                        <p class="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium">Today 07:30 AM</p>
+                                    </div>
+                                </div>                                 
+                            </li>
+                            <li class="list-group-item items-center flex border-b border-dashed border-slate-200 dark:border-slate-700">
+                                <div class="flex items-center my-4">
+                                    <div class="w-9 h-9 rounded">
+                                        <img class="w-full h-full overflow-hidden object-cover rounded object-center" src="assets/images/users/avatar-5.jpg" alt="logo" />
+                                    </div>
+                                    <div class="ml-2">
+                                        <a class="cursor-pointer hover:text-gray-900 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none">
+                                            <h5 class=" font-medium text-sm">Lunch with my friend</h5>
+                                        </a>
+                                        <p class="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium">Today 12:30 PM</p>
+                                    </div>
+                                </div>                                 
+                            </li>
+                            <li class="list-group-item items-center flex border-b border-dashed border-slate-200 dark:border-slate-700">
+                                <div class="flex items-center my-4">
+                                    <div class="w-9 h-9 rounded">
+                                        <img class="w-full h-full overflow-hidden object-cover rounded object-center" src="assets/images/users/avatar-7.jpg" alt="logo" />
+                                    </div>
+                                    <div class="ml-2">
+                                        <a class="cursor-pointer hover:text-gray-900 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none">
+                                            <h5 class=" font-medium text-sm">Call for payment Project ID : #254136</h5>
+                                        </a>
+                                        <p class="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium">Today 10:30 PM</p>
+                                    </div>
+                                </div>                                 
+                            </li>
+                            <li class="list-group-item items-center flex border-b border-dashed border-slate-200 dark:border-slate-700">
+                                <div class="flex items-center my-4">
+                                    <div class="w-9 h-9 rounded">
+                                        <img class="w-full h-full overflow-hidden object-cover rounded object-center" src="assets/images/users/avatar-9.jpg" alt="logo" />
+                                    </div>
+                                    <div class="ml-2">
+                                        <a class="cursor-pointer hover:text-gray-900 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none">
+                                            <h5 class=" font-medium text-sm">Picnic with my Family</h5>
+                                        </a>
+                                        <p class="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium">01 June 2019 - 09:30 AM</p>
+                                    </div>
+                                </div>                                 
+                            </li>
+                            <li class="list-group-item items-center flex ">
+                                <div class="flex items-center my-4">
+                                    <div class="w-9 h-9 rounded">
+                                        <img class="w-full h-full overflow-hidden object-cover rounded object-center" src="assets/images/users/avatar-6.jpg" alt="logo" />
+                                    </div>
+                                    <div class="ml-2">
+                                        <a class="cursor-pointer hover:text-gray-900 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none">
+                                            <h5 class=" font-medium text-sm">Meeting with Developers</h5>
+                                        </a>
+                                        <p class="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium">04 June 2019 - 07:30 AM</p>
+                                    </div>
+                                </div>                                 
+                            </li>
+                        </ul>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-8 xl:col-span-9 ">
+                <div class="card">
+                    <div class="card-body">
+                        <div id='calendar'></div>
+                        <div style='clear:both'></div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/fullcalendar/main.min.js"></script>
+    <script src="assets/js/pages/calendar.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

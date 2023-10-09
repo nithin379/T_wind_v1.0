@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+    <link rel="stylesheet" href="assets/libs/magic.css/magic.min.css">
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block dark:text-slate-100">Animation</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Animation</li>
+                                </ol>
+                            </div> 
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container--> 
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 justify-center">
+            <div class="xl:col-start-3 sm:col-span-12  md:col-span-12 lg:col-span-12 xl:col-span-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h4 class="font-medium text-lg dark:text-slate-300">Masic Animation</h4>
+                            <h6 class="mb-5 text-slate-400">CSS3 Animations with special effects.</h6>
+                            <div class="relative inline-block mx-auto">
+                                <div id="animate-me">
+                                    <div class="shadow-md p-5 inline-block rounded-full">
+                                        <img src="assets/images/logo-sm.png" alt="" class="w-20 h-20">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="">
+                                <div id="content"
+                                    class="text-center  container-magic-bottom">
+                                <div style="height: 450px;" data-simplebar>
+                                    <h5 class="mb-3 text-base font-medium dark:text-slate-400">Magic Effects</h5>
+                                    <div class="flex flex-wrap gap-2 justify-center">
+                                        <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                            data-test="vanishIn">Masic</button>
+                                            
+                                        <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                            font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="twisterInDown">TwisterInDown</button>
+
+                                        <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                            font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                            data-test="twisterInUp">TwisterInUp</button>
+
+                                        <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                            font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                            data-test="swap">Swap</button>
+                                    </div>
+
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Bling</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="puffIn">PuffIn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="puffOut">PuffOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="vanishIn">VanishIn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="vanishOut">VanishOut</button>
+                                </div>
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Static Effects</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openDownLeft">OpenDownLeft</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openDownRight">OpenDownRight</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openUpLeft">OpenUpLeft</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openUpRight">OpenUpRight</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openDownLeftReturn">OpenDownLeftReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openDownRightReturn">OpenDownRightReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openUpLeftReturn">OpenUpLeftReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openUpRightReturn">OpenUpRightReturn</button>
+                                </div>    
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Static Effects Out</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openDownLeftOut">OpenDownLeftOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openDownRightOut">OpenDownRightOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openUpLeftOut">OpenUpLeftOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="openUpRightOut">OpenUpRightOut</button>
+                                </div>    
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Perspective</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="perspectiveDown">PerspectiveDown</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="perspectiveUp">PerspectiveUp</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="perspectiveLeft">PerspectiveLeft</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="perspectiveRight">PerspectiveRight</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="perspectiveDownReturn">PerspectiveDownReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="perspectiveUpReturn">PerspectiveUpReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="perspectiveLeftReturn">PerspectiveLeftReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="perspectiveRightReturn">PerspectiveRightReturn</button>
+                                </div>
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Rotate</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="rotateDown">RotateDown</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="rotateUp">RotateUp</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="rotateLeft">RotateLeft</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="rotateRight">RotateRight</button>
+                                </div>
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Slide</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="slideDown">SlideDown</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="slideUp">SlideUp</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="slideLeft">SlideLeft</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="slideRight">SlideRight</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="slideDownReturn">SlideDownReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="slideUpReturn">SlideUpReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="slideLeftReturn">SlideLeftReturn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="slideRightReturn">SlideRightReturn</button>
+                                </div>
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Math</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="swashOut">SwashOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="swashIn">SwashIn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="foolishIn">FoolishIn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="holeOut">HoleOut</button>
+                                </div>
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Tin</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="tinRightOut">TinRightOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="tinLeftOut">TinLeftOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="tinUpOut">TinUpOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="tinDownOut">TinDownOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="tinRightIn">TinRightIn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="tinLeftIn">TinLeftIn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="tinUpIn">TinUpIn</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="tinDownIn">TinDownIn</button>
+                                </div>
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Bomb</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="bombRightOut">BombRightOut</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="bombLeftOut">BombLeftOut</button>
+                                </div>
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">Boing</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="boingInUp">BoingInUp</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="boingOutDown">BoingOutDown</button>
+                                </div>
+                                <h5 class="my-3 text-base font-medium dark:text-slate-400">On The Space</h5>
+                                <div class="flex flex-wrap gap-2 justify-center">
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="spaceOutUp">SpaceOutUp</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="spaceOutRight">SpaceOutRight</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="spaceOutDown">SpaceOutDown</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="spaceOutLeft">SpaceOutLeft</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="spaceInUp">SpaceInUp</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="spaceInRight">SpaceInRight</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="spaceInDown">SpaceInDown</button>
+
+                                    <button type="button" class="focus:outline-none focus:bg-opacity-50 focus:text-black hover:text-black  text-indigo-700 hover:bg-opacity-50 bg-gray-100 text-sm 
+                                        font-medium py-2 px-3 rounded dark:bg-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                                        data-test="spaceInLeft">SpaceInLeft</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->     
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/pages/animation.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

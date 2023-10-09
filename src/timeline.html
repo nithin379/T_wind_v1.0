@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block dark:text-slate-100">Timeline</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">Pages</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Timeline</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card " >
+                    <div class="card-header">
+                        <h4 class="font-medium dark:text-slate-300">Activites</h4>
+                    </div>
+                    <div class="card-body h-[510px] p-4" data-simplebar>
+                        <ol class="relative border-l border-dashed border-gray-200 dark:border-gray-700 ml-3">                  
+                            <li class="mb-10 ml-8">            
+                                <span data-tooltip-target="tooltip-light" data-tooltip-style="light" class="flex absolute -left-4 justify-center items-center w-9 h-9 bg-green-100 rounded-full dark:bg-green-900">
+                                    <i class="ti ti-clock text-green-500"></i>
+                                    <span id="tooltip-light" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-[12px] font-medium text-gray-900 bg-white rounded-lg border border-slate-200 shadow-sm opacity-0 tooltip">
+                                        Tooltip content
+                                        <span class="tooltip-arrow" data-popper-arrow></span>
+                                    </span>
+                                </span>
+                                <div class="justify-between items-center p-4 bg-white rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700">
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">just now</span>
+                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-blue-600 dark:text-blue-500 hover:underline">Jack </a>
+                                         updated the status of Refund #1234 to awaiting customer response
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-10 ml-8">
+                                <span class="flex absolute -left-4 justify-center items-center w-9 h-9 bg-pink-100 rounded-full dark:bg-pink-900/50">
+                                    <i class="ti ti-brand-codesandbox text-pink-500"></i>
+                                </span>
+                                <div class="justify-between items-center p-4 bg-white rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700">
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">just now</span>
+                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-blue-600 dark:text-blue-500 hover:underline">Donald</a>
+                                         updated the status of Refund #1234 to awaiting customer response
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-10 ml-8">
+                                <span class="flex absolute -left-4 justify-center items-center w-9 h-9 bg-blue-200 rounded-full dark:bg-slate-900">
+                                    <img class="rounded-full shadow-lg" src="assets/images/users/avatar-1.jpg" alt="Thomas Lean image"/>
+                                </span>
+                                <div class="p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-slate-700">
+                                    <div class="justify-between items-center mb-3 sm:flex">
+                                        <span class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">2 hours ago</span>
+                                        <div class="text-sm font-normal text-gray-500 lex dark:text-gray-300">Aword winner this year <a href="#" class="font-semibold text-gray-900 dark:text-white hover:underline">Bette Elam</a></div>
+                                    </div>
+                                    <div class="p-3 text-xs italic font-normal text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:bg-slate-800 dark:border-slate-700 dark:text-gray-300">
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</div>
+                                </div>
+                            </li>
+                            <li class="mb-10 ml-8">
+                                <span class="flex absolute -left-4 justify-center items-center w-9 h-9 bg-purple-100 rounded-full dark:bg-purple-900/50">
+                                    <i class="ti ti-atom-2 text-purple-500"></i>
+                                </span>
+                                <div class="justify-between items-center p-4 bg-white rounded-lg border border-gray-200 shadow-sm sm:flex dark:bg-slate-800 dark:border-slate-700">
+                                    <span class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">just now</span>
+                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-300 w-full md:w-[80%]">
+                                        <a href="#" class="font-semibold text-blue-600 dark:text-blue-500 hover:underline">William  </a>
+                                         updated the status of Refund #1234 to awaiting customer response
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">USA Group</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div><!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Timeline</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body h-[510px]" data-simplebar>
+                        <div class="relative wrap overflow-hidden p-10 h-full">
+                            <div class="absolute border-opacity-20 border-dashed dark:border-opacity-95  border-slate-700 h-full border left-auto md:left-[50%]"></div>
+                            <!-- right timeline -->
+                            <div class="mb-8 flex justify-start md:justify-between  items-center w-full right-timeline">
+                                <div class="order-1 w-auto md:w-5/12"></div>
+                                    <div class="z-20 flex items-center order-1 bg-gray-200 dark:bg-slate-700 shadow-xl w-8 h-8 rounded-full -ml-4 md:ml-0">
+                                        <h1 class="mx-auto font-semibold text-lg text-gray-800 dark:text-slate-300">1</h1>
+                                    </div>
+                                <div class="order-1 bg-gray-300 rounded-lg shadow-xl w-11/12 md:w-5/12 px-6 py-4 ml-2 md:ml-0">
+                                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Monthly Report</h3>
+                                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                        
+                            <!-- left timeline -->
+                            <div class="mb-8 flex justify-start md:justify-between md:flex-row-reverse items-center w-full left-timeline">
+                                <div class="order-1 w-auto md:w-5/12"></div>
+                                    <div class="z-20 flex items-center order-1 bg-gray-200 dark:bg-slate-700 shadow-xl w-8 h-8 rounded-full -ml-4 md:ml-0">
+                                        <h1 class="mx-auto text-gray-800 font-semibold text-lg dark:text-slate-300">2</h1>
+                                    </div>
+                                <div class="order-1 bg-red-400 rounded-lg shadow-xl w-11/12 md:w-5/12 px-6 py-4 ml-2 md:ml-0">
+                                    <h3 class="mb-3 font-bold text-white text-xl">Highest Account Value</h3>
+                                    <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- right timeline -->
+                            <div class="mb-8 flex justify-start md:justify-between  items-center w-full right-timeline">
+                                <div class="order-1 w-auto md:w-5/12"></div>
+                                    <div class="z-20 flex items-center order-1 bg-gray-200 dark:bg-slate-700 shadow-xl w-8 h-8 rounded-full -ml-4 md:ml-0">
+                                        <h1 class="mx-auto font-semibold text-lg text-gray-800 dark:text-slate-300">3</h1>
+                                    </div>
+                                <div class="order-1 bg-gray-300 rounded-lg shadow-xl w-11/12 md:w-5/12 px-6 py-4 ml-2 md:ml-0">
+                                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Second Trade</h3>
+                                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                        
+                            <!-- left timeline -->
+                            <div class="mb-8 flex justify-start md:justify-between md:flex-row-reverse items-center w-full left-timeline">
+                                <div class="order-1 w-auto md:w-5/12"></div>
+                                    <div class="z-20 flex items-center order-1 bg-gray-200 dark:bg-slate-700 shadow-xl w-8 h-8 rounded-full -ml-4 md:ml-0">
+                                        <h1 class="mx-auto text-gray-800 font-semibold text-lg dark:text-slate-300">4</h1>
+                                    </div>
+                                <div class="order-1 bg-red-400 rounded-lg shadow-xl w-11/12 md:w-5/12 px-6 py-4 ml-2 md:ml-0">
+                                    <h3 class="mb-3 font-bold text-white text-xl">First Trade</h3>
+                                    <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                          </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')   
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

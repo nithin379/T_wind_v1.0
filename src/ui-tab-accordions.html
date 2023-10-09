@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-0 block dark:text-slate-100">Tab Accordions</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Tab Accordions</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Default tabs</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                            <li class="mr-2">
+                                <a href="#" aria-current="page" class="inline-block p-4 text-blue-600 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500">Profile</a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="#" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Dashboard</a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="#" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Settings</a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="#" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Contacts</a>
+                            </li>
+                            <li>
+                                <a class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500">Disabled</a>
+                            </li>
+                        </ul>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Tabs with underline</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                            <ul class="flex flex-wrap -mb-px">
+                                <li class="mr-2">
+                                    <a href="#" class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Profile</a>
+                                </li>
+                                <li class="mr-2">
+                                    <a href="#" class="inline-block p-4 text-blue-600 rounded-t-lg border-b-2 border-blue-600 active dark:text-blue-500 dark:border-blue-500" aria-current="page">Dashboard</a>
+                                </li>
+                                <li class="mr-2">
+                                    <a href="#" class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Settings</a>
+                                </li>
+                                <li class="mr-2">
+                                    <a href="#" class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Contacts</a>
+                                </li>
+                                <li>
+                                    <a class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->  
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Tabs with icons</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="border-b border-gray-200 dark:border-gray-700">
+                            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400">
+                                <li class="mr-2">
+                                    <a href="#" class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
+                                        <i class="far fa-circle-user self-center mr-2"></i>Profile
+                                    </a>
+                                </li>
+                                <li class="mr-2">
+                                    <a href="#" class="inline-flex p-4 text-blue-600 rounded-t-lg border-b-2 border-blue-600 active dark:text-blue-500 dark:border-blue-500 group" aria-current="page">
+                                        <i class="fas fa-border-all self-center mr-2"></i>Dashboard
+                                    </a>
+                                </li>
+                                <li class="mr-2">
+                                    <a href="#" class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
+                                        <i class="fas fa-gear self-center mr-2"></i>Settings
+                                    </a>
+                                </li>
+                                <li class="mr-2">
+                                    <a href="#" class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
+                                        <i class="fas fa-phone self-center mr-2"></i>Contacts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Pills tabs</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
+                            <li class="mr-2">
+                                <a href="#" class="inline-block py-3 px-4 text-white bg-blue-600 rounded-lg active" aria-current="page">Tab 1</a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="#"  class="inline-block py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white">Tab 2</a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="#" class="inline-block py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white">Tab 3</a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="#" class="inline-block py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white">Tab 4</a>
+                            </li>
+                            <li>
+                                <a class="inline-block py-3 px-4 text-gray-400 cursor-not-allowed dark:text-gray-500">Tab 5</a>
+                            </li>
+                        </ul>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->  
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Full width tabs</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="sm:hidden">
+                            <label for="tabs" class="sr-only">Select your country</label>
+                            <select id="tabs" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option>Profile</option>
+                                <option>Canada</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                            </select>
+                        </div>
+                        <ul class="hidden text-sm font-medium text-center text-gray-500 rounded-lg divide-x divide-gray-200 shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+                            <li class="w-full">
+                                <a href="#" class="inline-block p-4 w-full text-gray-900 bg-gray-100 rounded-l-lg  active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Profile</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="#" class="inline-block p-4 w-full bg-white hover:text-gray-700 hover:bg-gray-50  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Dashboard</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="#" class="inline-block p-4 w-full bg-white hover:text-gray-700 hover:bg-gray-50  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Settings</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="#" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50  focus:outline-none  dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Invoice</a>
+                            </li>
+                        </ul>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Interactive tabs</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="mb-4 border-b border-gray-200 dark:border-slate-700">
+                            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block p-4 rounded-t-lg border-b-2" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+                                </li>
+                                <li role="presentation">
+                                    <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="myTabContent">
+                            <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <p class="text-sm text-gray-500 dark:text-gray-400">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                            </div>
+                            <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                            </div>
+                            <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+                            </div>
+                            <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                                <p class="text-sm text-gray-500 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                            </div>
+                        </div>
+                    </div><!--end card-body--> 
+                </div> <!--end card-->
+            </div><!--end col-->    
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Default accordion</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div id="accordion-collapse" data-accordion="collapse">
+                            <h2 id="accordion-collapse-heading-1">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 rounded-t-xl border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                <span>What is T-Wind?</span>
+                                <i class="fas fa-angle-down" data-accordion-icon></i>
+                              </button>
+                            </h2>
+                            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                              <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                              </div>
+                            </div>
+                            <h2 id="accordion-collapse-heading-2">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                                <span>Is there a Figma file available?</span>
+                                <i class="fas fa-angle-down" data-accordion-icon></i>
+                              </button>
+                            </h2>
+                            <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                              <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from.</p>
+                              </div>
+                            </div>
+                            <h2 id="accordion-collapse-heading-3">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                <span>What are the differences between T-Wind and Tailwind UI?</span>
+                                <i class="fas fa-angle-down" data-accordion-icon></i>
+                              </button>
+                            </h2>
+                            <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Flush accordion</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                            <h2 id="accordion-flush-heading-1">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border-b border-dashed border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                                <span>What is T-Wind?</span>
+                                <i class="fas fa-angle-down" data-accordion-icon></i>
+                              </button>
+                            </h2>
+                            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                              <div class="p-5 border-b border-dashed border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                              </div>
+                            </div>
+                            <h2 id="accordion-flush-heading-2">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border-b border-dashed border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                                <span>Is there a Figma file available?</span>
+                                <i class="fas fa-angle-down" data-accordion-icon></i>
+                              </button>
+                            </h2>
+                            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                                <div class="p-5 border-b border-dashed border-gray-200 dark:border-gray-700">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>             
+                                </div>
+                            </div>
+                            <h2 id="accordion-flush-heading-3">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border-b border-dashed border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                                <span>What are the differences between T-Wind and Tailwind UI?</span>
+                                <i class="fas fa-angle-down" data-accordion-icon></i>
+                              </button>
+                            </h2>
+                            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                              <div class="p-5 border-b border-dashed border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>    
+                              </div>
+                            </div>
+                          </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->         
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/pages/components.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

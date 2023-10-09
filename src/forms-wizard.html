@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block dark:text-slate-100">Wizard</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Wizard</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-12 xl:col-span-12 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Title</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body pt-0">
+                        <div class="mb-4 border-b border-dashed border-gray-200 dark:border-gray-700 flex flex-wrap justify-start lg:justify-between">                            
+                            <ul class="flex flex-wrap mb-5 lg:-mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="">
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 border-gray-100 dark:border-gray-700" id="step1-tab" data-tabs-target="#step1" type="button" role="tab" aria-controls="step1" aria-selected="false">Seller Details</button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block py-4 px-4 text-sm font-medium text-center rounded-t-lg border-b-2 border-transparent text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-400 border-blue-600 dark:border-blue-500" id="step2-tab" data-tabs-target="#step2" type="button" role="tab" aria-controls="step2" aria-selected="true">Company Document</button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button class="inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 border-gray-100 dark:border-gray-700" id="step3-tab" data-tabs-target="#step3" type="button" role="tab" aria-controls="step3" aria-selected="false">Bank Details</button>
+                                </li>
+                                <li role="presentation">
+                                    <button class="inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 border-gray-100 dark:border-gray-700" id="step4-tab" data-tabs-target="#step4" type="button" role="tab" aria-controls="step4" aria-selected="false">Confirm Detail</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="myTabContent">
+                            <div class="hidden" id="step1" role="tabpanel" aria-labelledby="step1-tab">
+                                <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
+                                    <div class="col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6">
+                                        <div class="mb-3">
+                                            <label for="txtFirstNameBilling" class="label">Contact Person</label>
+                                            <input type="text" id="txtFirstNameBilling" name="txtFirstNameBilling" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtCompanyBilling" class="label">Landline No.</label>
+                                            <input type="text" id="txtCompanyBilling" name="txtCompanyBilling" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtAddress1Billing" class="label">Address 1</label>
+                                            <textarea id="txtAddress1Billing"  name="txtAddress1Billing" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtCityBilling" class="label">Company Type</label>
+                                            <input type="text" id="txtCityBilling" name="txtCityBilling" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtTelephoneBilling" class="label">Product Category</label>
+                                            <input type="text" id="txtTelephoneBilling" name="txtTelephoneBilling" class="form-control">
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6">
+                                        <div class="mb-3">
+                                            <label for="txtStateProvinceBilling" class="label">Mobile No.</label>
+                                            <input type="text" id="txtStateProvinceBilling" name="txtStateProvinceBilling" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtEmailAddressBilling" class="label">Email Address</label>
+                                            <input type="text" id="txtEmailAddressBilling" name="txtEmailAddressBilling" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtAddress2Billing" class="label">Warehouse Address</label>
+                                            <textarea id="txtAddress2Billing"  name="txtAddress2Billing" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtStateProvinceBilling" class="label">Live Market A/C</label>
+                                            <input type="text" id="txtStateProvinceBilling" name="txtStateProvinceBilling" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtFaxBilling" class="label">Product Sub Category</label>
+                                            <input type="text" id="txtFaxBilling" name="txtFaxBilling" class="form-control">
+                                        </div>
+                                    </div><!--end col--> 
+                                    <div class="col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-12">
+                                        <div class="">
+                                            <button type="button" id="step1Next" class="btn bg-blue-500 text-white hover:bg-blue-600 float-right">Next</button>
+                                        </div>
+                                    </div><!--end col--> 
+                                </div><!--end grid-->                                   
+                            </div><!--end tab-pan-->
+                            <div class="hidden" id="step2" role="tabpanel" aria-labelledby="step2-tab">
+                                <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
+                                    <div class="col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6">
+                                        <div class="mb-3">
+                                            <label for="txtFirstNameShipping" class="label">PAN Card</label>
+                                            <input type="text" id="txtFirstNameShipping" name="txtFirstNameShipping" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtCompanyShipping" class="label">CST No.</label>
+                                            <input type="text" id="txtCompanyShipping" name="txtCompanyShipping" class="form-control">
+                                        </div>
+                                        <div class="mb-3 md:mb-0">
+                                            <label for="txtCityShipping" class="label">Company UIN</label>
+                                            <input type="text" id="txtCityShipping" name="txtCityShipping" class="form-control">
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6">
+                                        <div class="mb-3">
+                                            <label for="txtLastNameShipping" class="label">VAT/TIN No.</label>
+                                            <input type="text" id="txtLastNameShipping" name="txtLastNameShipping" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtEmailAddressShipping" class="label">Service Tax No.</label>
+                                            <input type="text" id="txtEmailAddressShipping" name="txtEmailAddressShipping" class="form-control">
+                                        </div>
+                                        <div class="mb-3 md:mb-0">
+                                            <label for="txtStateProvinceShipping" class="label">Declaration</label>
+                                            <input type="text" id="txtStateProvinceShipping" name="txtStateProvinceShipping" class="form-control">
+                                        </div>
+                                    </div><!--end col--> 
+                                    <div class="col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-12">
+                                        <div class="">
+                                            <button type="button" id="step2Prev" class="btn bg-slate-400 text-white hover:bg-slate-500 float-left">Previous</button>
+                                            <button type="button" id="step2Next" class="btn bg-blue-500 text-white hover:bg-blue-600 float-right">Next</button>
+                                        </div>
+                                    </div><!--end col--> 
+                                </div><!--end grid-->
+                                
+                            </div><!--end tab-pan-->
+                            <div class="hidden" id="step3" role="tabpanel" aria-labelledby="step3-tab">
+                                <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
+                                    <div class="col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6">
+                                        <div class="mb-3">
+                                            <label for="txtNameCard" class="label">Name on Card</label>
+                                            <input type="text" id="txtNameCard" name="txtNameCard" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtCreditCardNumber" class="label">Credit Card Number</label>
+                                            <input type="text" id="txtCreditCardNumber" name="txtCreditCardNumber" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtExpirationDate" class="label">Expiration Date</label>
+                                            <input type="text" id="txtExpirationDate" name="txtExpirationDate" class="form-control">
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6">
+                                        <div class="mb-3">
+                                            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select your country</label>
+                                            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                <option value="">--Please Select--</option>
+                                                <option value="AE">American Express</option>
+                                                <option value="VI">Visa</option>
+                                                <option value="MC">MasterCard</option>
+                                                <option value="DI">Discover</option> 
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="txtCardVerificationNumber" class="label">Verification Number</label>
+                                            <input type="text" id="txtCardVerificationNumber" name="txtCardVerificationNumber" class="form-control">
+                                        </div>
+                                    </div><!--end col--> 
+                                    <div class="col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-12">
+                                        <div class="">
+                                            <button type="button" id="step3Prev" class="btn bg-slate-400 text-white hover:bg-slate-500 float-left">Previous</button>
+                                            <button type="button" id="step3Next" class="btn bg-blue-500 text-white hover:bg-blue-600 float-right">Next</button>
+                                        </div>
+                                    </div><!--end col--> 
+                                </div><!--end grid-->
+                            </div><!--end tab-pan-->
+                            <div class="hidden" id="step4" role="tabpanel" aria-labelledby="step4-tab">
+                                <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
+                                    <div class="col-span-12 md:col-span-6 lg:col-span-12 xl:col-span-12">
+                                        <div class="flex items-center">
+                                            <input id="flexCheckDefault" type="checkbox" class="checkbox ring-0 rounded border-gray-300 checked:border-primary-500 focus:outline-none focus:shadow-none ring-offset-0">
+                                            <label for="flexCheckDefault" class="self-center ml-1 dark:text-slate-400">
+                                                I agree with the Terms and Conditions.
+                                            </label>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-12">
+                                        <div class="">
+                                            <button type="button" id="step4Prev" class="btn bg-slate-400 text-white hover:bg-slate-500 float-left">Previous</button>
+                                            <button type="button" id="step4Finish" class="btn bg-red-500 text-white hover:bg-red-600 float-right">Finish</button>
+                                        </div>
+                                    </div><!--end col--> 
+                                </div><!--end grid-->
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/pages/components.js"></script>
+    <script src="assets/js/pages/wizard.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

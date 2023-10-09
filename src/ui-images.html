@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-0 block dark:text-slate-100">Images</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Images</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-12 xl:col-span-12 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Image With Ring</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <img src="assets/images/widgets/1.jpg" alt="" class="ring-offset-2 ring-2 ring-slate-200 dark:ring-slate-800 rounded">
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->     
+        </div><!--end inner-grid-->
+        <div class="grid xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Image Square</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <img src="assets/images/users/avatar-4.jpg" alt="" class=" mx-auto block">
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Image Rounded</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-lg mx-auto block">
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->          
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Image Rounded Full</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <img src="assets/images/users/avatar-9.jpg" alt="" class="rounded-full mx-auto block">
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <div class="grid xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Image Float Right/left</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-full mx-auto float-right">
+                        <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded mx-auto float-left">
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->  
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Image Custom Rounded</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-tl-[33%] rounded-tr-[50%] rounded-bl-[50%] rounded-br-[15%] mx-auto block">
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->     
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

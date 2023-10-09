@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+    <link rel="stylesheet" href="assets/libs/vanilla-datatables-editable/datatable.editable.min.css">
+    <link rel="stylesheet" href="assets/libs/simple-datatables/style.css">
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block dark:text-slate-100">Editable</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Editable</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-12 xl:col-span-12 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Editable</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="relative overflow-x-auto  sm:rounded">                                
+                            <table class="table w-full text-sm text-left text-gray-500 dark:text-gray-400" id="datatable_1">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-slate-700 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="p-4">
+                                            <label class="custom-label">
+                                                <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                                                  <input type="checkbox" class="hidden">
+                                                  <i class="fas fa-check hidden text-xs text-slate-700"></i>
+                                                </div>
+                                            </label>
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Product name
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Color
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Category
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Price
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            <span class="sr-only">Edit</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                                        <td class="w-4 p-4">
+                                            <label class="custom-label">
+                                                <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                                                  <input type="checkbox" class="hidden" checked>
+                                                  <i class="fas fa-check hidden text-xs text-slate-700"></i>
+                                                </div>
+                                            </label>
+                                        </td>
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                            Apple MacBook Pro 17"
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            Sliver
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Laptop
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            $2999
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                                        <td class="w-4 p-4">
+                                            <label class="custom-label">
+                                                <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                                                  <input type="checkbox" class="hidden" checked>
+                                                  <i class="fas fa-check hidden text-xs text-slate-700"></i>
+                                                </div>
+                                            </label>
+                                        </td>
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                            Microsoft Surface Pro
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            White
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Laptop PC
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            $1999
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                                        <td class="w-4 p-4">
+                                            <label class="custom-label">
+                                                <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                                                  <input type="checkbox" class="hidden">
+                                                  <i class="fas fa-check hidden text-xs text-slate-700"></i>
+                                                </div>
+                                            </label>
+                                        </td>
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                            Magic Mouse 2
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            Black
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Accessories
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            $99
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                                        <td class="w-4 p-4">
+                                            <label class="custom-label">
+                                                <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                                                  <input type="checkbox" class="hidden" checked>
+                                                  <i class="fas fa-check hidden text-xs text-slate-700"></i>
+                                                </div>
+                                            </label>
+                                        </td>
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                            Microsoft Surface Pro
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            White
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Laptop PC
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            $1999
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                                        <td class="w-4 p-4">
+                                            <label class="custom-label">
+                                                <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                                                  <input type="checkbox" class="hidden">
+                                                  <i class="fas fa-check hidden text-xs text-slate-700"></i>
+                                                </div>
+                                            </label>
+                                        </td>
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                            Magic Mouse 2
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            Black
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Accessories
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            $99
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                                        <td class="w-4 p-4">
+                                            <label class="custom-label">
+                                                <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                                                  <input type="checkbox" class="hidden" checked>
+                                                  <i class="fas fa-check hidden text-xs text-slate-700"></i>
+                                                </div>
+                                            </label>
+                                        </td>
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                            Microsoft Surface Pro
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            White
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Laptop PC
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            $1999
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                                        <td class="w-4 p-4">
+                                            <label class="custom-label">
+                                                <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                                                  <input type="checkbox" class="hidden">
+                                                  <i class="fas fa-check hidden text-xs text-slate-700"></i>
+                                                </div>
+                                            </label>
+                                        </td>
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                            Magic Mouse 2
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            Black
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Accessories
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            $99
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->         
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html') 
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/vanilla-datatables-editable/datatable.editable.min.js"></script>
+    <script src="assets/libs/simple-datatables/umd/simple-datatables.js"></script>
+    <script src="assets/js/pages/editable.init.js"></script>
+    <script src="assets/js/app.js"></script> 
+</body>
+
+</html>

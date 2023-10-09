@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block dark:text-slate-100">Pricing</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">Pages</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Pricing</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-3 xl:col-span-3 ">
+                <div class="card">
+                    <div class="card-body text-center p-14">
+                        <span class="inline-flex bg-primary-500/20 text-primary-500 font-semibold uppercase text-[0.688rem] leading-4 tracking-widest py-1 px-3 rounded-full mb-4">Single</span>
+                        <h2 class="font-bold uppercase tracking-wide text-center mb-4 text-gray-800 dark:text-slate-400">
+                            Basic Plan                             
+                        </h2>        
+                        <div class="text-base font-medium mb-10 sm:mb-8 lg:mb-10">
+                            <span class="flex items-center justify-center">
+                                <ins class="text-5xl tracking-tight text-gray-800 font-extrabold no-underline mx-3 dark:text-slate-200">$199</ins>
+                                <span class="text-gray-400">/month</span>
+                            </span>
+                        </div>
+                        <div class="mb-8 sm:mb-0 xl:mb-12 flex flex-col items-center sm:block">
+                            <ul role="list" class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 xl:grid-cols-1">
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30GB Disk Space
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30 Email Accounts
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30GB Monthly Bandwidth
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    06 Subdomains
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    10 Domains
+                                </li>
+                            </ul>
+                        </div>        
+                        <div class="sm:hidden xl:block">
+                            <a href="" class="block mx-auto text-center w-60 md:w-64 xl:w-60 bg-primary-500 text-white hover:bg-primary-600 rounded-lg font-semibold p-3 focus:outline-none">Get this package</a>                            
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->  
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-3 xl:col-span-3 ">
+                <div class="card">
+                    <div class="card-body text-center p-14">
+                        <span class="inline-flex bg-primary-500/20 text-primary-500 font-semibold uppercase text-[0.688rem] leading-4 tracking-widest py-1 px-3 rounded-full mb-4">Double</span>
+                        <h2 class="font-bold uppercase tracking-wide text-center mb-4 text-gray-800 dark:text-slate-400">
+                            Premium Plan                           
+                        </h2>        
+                        <div class="text-base font-medium mb-10 sm:mb-8 lg:mb-10">
+                            <span class="flex items-center justify-center">
+                                <ins class="text-5xl tracking-tight text-gray-800 font-extrabold no-underline mx-3 dark:text-slate-200">$299</ins>
+                                <span class="text-gray-400">/month</span>
+                            </span>
+                        </div>
+                        <div class="mb-8 sm:mb-0 xl:mb-12 flex flex-col items-center sm:block">
+                            <ul role="list" class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 xl:grid-cols-1">
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30GB Disk Space
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30 Email Accounts
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30GB Monthly Bandwidth
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    06 Subdomains
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    10 Domains
+                                </li>
+                            </ul>
+                        </div>        
+                        <div class="sm:hidden xl:block">
+                            <a href="" class="block mx-auto text-center w-60 md:w-64 xl:w-60 bg-primary-500 text-white hover:bg-primary-600 rounded-lg font-semibold p-3 focus:outline-none">Get this package</a>                            
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->   
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-3 xl:col-span-3 ">
+                <div class="card">
+                    <div class="card-body text-center p-14">
+                        <span class="inline-flex bg-primary-500/20 text-primary-500 font-semibold uppercase text-[0.688rem] leading-4 tracking-widest py-1 px-3 rounded-full mb-4">Bundle</span>
+                        <h2 class="font-bold uppercase tracking-wide text-center mb-4 text-gray-800 dark:text-slate-400">
+                            Plus Plan                           
+                        </h2>        
+                        <div class="text-base font-medium mb-10 sm:mb-8 lg:mb-10">
+                            <span class="flex items-center justify-center">
+                                <ins class="text-5xl tracking-tight text-gray-800 font-extrabold no-underline mx-3 dark:text-slate-200">$499</ins>
+                                <span class="text-gray-400">/month</span>
+                            </span>
+                        </div>
+                        <div class="mb-8 sm:mb-0 xl:mb-12 flex flex-col items-center sm:block">
+                            <ul role="list" class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 xl:grid-cols-1">
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30GB Disk Space
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30 Email Accounts
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30GB Monthly Bandwidth
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    06 Subdomains
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    10 Domains
+                                </li>
+                            </ul>
+                        </div>        
+                        <div class="sm:hidden xl:block">
+                            <a href="" class="block mx-auto text-center w-60 md:w-64 xl:w-60 bg-primary-500 text-white hover:bg-primary-600 rounded-lg font-semibold p-3 focus:outline-none">Get this package</a>                            
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->  
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-3 xl:col-span-3 ">
+                <div class="card">
+                    <div class="card-body text-center p-14">
+                        <span class="inline-flex bg-primary-500/20 text-primary-500 font-semibold uppercase text-[0.688rem] leading-4 tracking-widest py-1 px-3 rounded-full mb-4">Special</span>
+                        <h2 class="font-bold uppercase tracking-wide text-center mb-4 text-gray-800 dark:text-slate-400">
+                            Master Plan                             
+                        </h2>        
+                        <div class="text-base font-medium mb-10 sm:mb-8 lg:mb-10">
+                            <span class="flex items-center justify-center">
+                                <ins class="text-5xl tracking-tight text-gray-800 font-extrabold no-underline mx-3 dark:text-slate-200">$799</ins>
+                                <span class="text-gray-400">/month</span>
+                            </span>
+                        </div>
+                        <div class="mb-8 sm:mb-0 xl:mb-12 flex flex-col items-center sm:block">
+                            <ul role="list" class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 xl:grid-cols-1">
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30GB Disk Space
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30 Email Accounts
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    30GB Monthly Bandwidth
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    06 Subdomains
+                                </li>
+                                <li class="flex items-center lg:w-64 xl:w-auto text-gray-600 font-semibold  dark:text-slate-500">
+                                    <i class="fas fa-check mr-2 text-primary-400 text-xs"></i>
+                                    10 Domains
+                                </li>
+                            </ul>
+                        </div>      
+                        <div class="sm:hidden xl:block">
+                            <a href="" class="block mx-auto text-center w-60 md:w-64 xl:w-60 bg-primary-500 text-white hover:bg-primary-600 rounded-lg font-semibold p-3 focus:outline-none">Get this package</a>                            
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

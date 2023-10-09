@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "T-Wind"})
+    <link rel="stylesheet" href="assets/libs/mobius1-selectr/selectr.min.css">
+    <link rel="stylesheet" href="assets/libs/huebee/huebee.min.css">
+    <link rel="stylesheet" href="assets/libs/vanillajs-datepicker/css/datepicker.min.css">
+    @@include('./partials/head-css.html')
+</head>
+
+@@include('./partials/body.html')
+
+    <!-- leftbar-tab-menu -->
+    @@include('./partials/horizontal.html')
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-1 block dark:text-slate-100">Form Advanced</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">UI Kit</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Form Advanced</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Default Select</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <select id="default" class="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                        </select>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Multi Select</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <select id="multiSelect" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                        </select>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->  
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-4 xl:col-span-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Taggable Select</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body"> 
+                        <select id="taggableSelect" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                        </select>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->            
+        </div><!--end inner-grid-->
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Huebee Color</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
+                            <div class="sm:col-span-12  md:col-span-4 lg:col-span-4 xl:col-span-4">
+                                <input  class="form-control color-input" value="#228">
+                            </div>
+                            <div class="sm:col-span-12  md:col-span-4 lg:col-span-4 xl:col-span-4">
+                                <input class="form-control " value="#024" data-huebee /> 
+                            </div>
+                            <div class="sm:col-span-12  md:col-span-4 lg:col-span-4 xl:col-span-4">
+                                <input class="form-control " value="#f7f8f9" data-huebee='{ "setBGColor": true, "saturations": 2 }' />      
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Custom Touch Spin</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="flex">
+                            <button type="button" class="inline-flex items-center px-3 text-sm text-slate-100 bg-primary-500 rounded-l-md border border-r-0 border-primary-500 dark:bg-slate-600 dark:text-slate-400 dark:border-slate-600" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="number" id="website-admin" class="rounded-none  bg-slate-50 border text-slate-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-slate-300 p-2.5  dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" min="0" name="quantity" value="0">
+                            <button type="button" class="inline-flex items-center px-3 text-sm text-slate-100 bg-primary-500 rounded-r-md border border-l-0 border-primary-500 dark:bg-slate-600 dark:text-slate-400 dark:border-slate-600" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->          
+        </div><!--end inner-grid-->
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card h-full">
+                    <div class="card-header">
+                        <h4 class="card-title">Vanilla JS Datepicker</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
+                            <div class="sm:col-span-12  md:col-span-4 lg:col-span-6 xl:col-span-6">
+                                <label for="Default_Datepicker" class="label">Default Datepicker</label>
+                                <input type="text" id="Default_Datepicker" class="form-control" name="foo">
+                                <label for="Default_Datepicker" class="label mt-3">Default Datepicker</label>
+                                <div class="flex" id="DateRange">
+                                    <input type="text" id="start-date" class="rounded-none rounded-l bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white" placeholder="Start" aria-label="StartDate">
+                                    <span class="inline-flex items-center px-3 text-sm text-slate-900 bg-slate-200  border border-r-0 border-l-0 border-slate-300 dark:bg-slate-600 dark:text-slate-400 dark:border-slate-600">
+                                      to
+                                    </span>
+                                    <input type="text" id="end-date" class="rounded-none rounded-r bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white" placeholder="End" aria-label="EndDate">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-12  md:col-span-4 lg:col-span-6 xl:col-span-6">
+                                <label class="mb-3 label label">Inline Datepicker</label>
+                                <div id="inline_calendar"></div>   
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Input Mask</h4>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div class="mb-2">
+                            <label class="mb-2 label">RegExp (Russian postal code) <span class="desc ml-2 text-xs text-slate-400">/^[1-6]\d{0,5}$/</span></label>
+                            <input id="regexp-mask" type="text" value="" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <label class="mb-2 label">Type here against mask <span class="desc ml-2 text-xs text-slate-400">+{7}(000)000-00-00</span></label>
+                            <input id="start-phone-mask" type="text" value="" class="form-control">
+                            <div class="desc text-xs text-slate-400">unmasked: <span id="start-phone-unmasked"></span><span id="start-phone-complete" class="example__complete"></span></div>
+                        </div>
+                        <div class="mb-2">
+                            <label class="mb-2 label">Mask in overwrite and autofix modes</label>
+                            <input id="date-overwrite-mask" type="text" value="" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <label class="mb-2 label">Type to uppercase</label>
+                            <input id="uppercase-mask" type="text" value="" class="form-control">
+                        </div>
+                        <div>
+                            <label class="mb-2 label">Date and time</label>
+                            <input id="moment-mask" type="text" value="" class="form-control">
+                            <div class="desc text-xs text-slate-400">date: <span id="moment-value"></span></div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->          
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        @@include('./partials/footer.html')    
+    </div><!--end container-->
+
+    
+    
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/mobius1-selectr/selectr.min.js"></script>
+    <script src="assets/libs/huebee/huebee.pkgd.min.js"></script>
+    <script src="assets/libs/vanillajs-datepicker/js/datepicker-full.min.js"></script>
+    <script src="assets/libs/moment/moment.js"></script>
+    <script src="assets/libs/imask/imask.min.js"></script>
+    <script src="assets/js/pages/advanced.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

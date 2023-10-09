@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>T-Wind - Admin & Dashboard Template</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      content="Tailwind Multipurpose Admin & Dashboard Template"
+      name="description"
+    />
+    <meta content="" name="Mannatthemes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+</head>
+
+<body data-layout-mode="light" class="bg-gray-100 dark:bg-gray-900 bg-[url('../images/bg-body.png')] dark:bg-[url('../images/bg-body-2.png')]">
+
+
+    <!-- leftbar-tab-menu -->
+    <nav  class="border-gray-200 bg-gray-900 px-2.5 py-2.5 shadow-sm dark:bg-slate-800 sm:px-4 block print:hidden">
+      <div class="container mx-0 flex max-w-full flex-wrap items-center lg:mx-auto">
+        <div class="flex items-center">
+          <a href="#" class="flex items-center outline-none">
+            <img src="assets/images/logo-sm.png" alt="" class="h-6" />
+            <img src="assets/images/logo.png" alt="" class="ml-2 hidden xl:block mt-1" />
+          </a>
+        </div>
+
+        <div
+          class="order-2 hidden w-full items-center justify-between md:order-1 md:ml-5 md:flex md:w-auto"
+          id="mobile-menu-2"
+        >
+          <ul
+            class="font-body mt-4 flex flex-col font-medium md:mt-0 md:flex-row md:text-sm md:font-medium space-x-0 md:space-x-4 lg:space-x-6 xl:space-x-8 navbar"
+          >
+            <li class="dropdown">
+              <button
+                id="navDashboardLink"
+                data-dropdown-toggle="navDashboard"
+                class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0"
+              >
+                <i class="ti ti-smart-home mr-1 pb-1 text-lg"></i> Dashboards
+                <i class="ti ti-chevron-down ml-auto lg:ml-1"></i>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="navDashboard"
+                class="dropdown-menu z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-gray-800 md:bg-white text-base shadow border border-slate-700 md:border-white dark:border-slate-700/50 dark:divide-gray-600 dark:bg-gray-900 md:w-44 dropdown-menu"
+              >
+                <ul class="py-1">
+                  <li>
+                    <a href="index.html" class="nav-link  dark:hover:bg-slate-800/70">Analytics</a>
+                  </li>
+                  <li>
+                    <a href="ecommerce-index.html" class="nav-link  dark:hover:bg-slate-800/70">Ecommerce</a>
+                  </li>
+                  <li>
+                    <a href="project-index.html" class="nav-link  dark:hover:bg-slate-800/70">Project</a>
+                  </li>
+                  <li>
+                    <a href="nft-index.html" class="nav-link  dark:hover:bg-slate-800/70">NFTs</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                id="navAppsLink"
+                data-dropdown-toggle="navApps"
+                class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0"
+              >
+                <i class="ti ti-apps mr-1 pb-1 text-lg"></i> Apps
+                <i class="ti ti-chevron-down ml-auto lg:ml-1"></i>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="navApps"
+                class="dropdown-menu z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-gray-800 md:bg-white text-base shadow dark:divide-gray-600 border border-slate-700 md:border-white dark:border-slate-700/50 dark:bg-gray-900 md:w-44 dropdown-menu"
+              >
+                <ul class="py-1">
+                  <li>
+                    <a href="inbox.html" class="nav-link  dark:hover:bg-slate-800/70">Emails</a>
+                  </li>
+                  <li>
+                    <a href="email-read.html" class="nav-link  dark:hover:bg-slate-800/70">Email Read</a>
+                  </li>
+                  <li>
+                    <a href="chat.html" class="nav-link  dark:hover:bg-slate-800/70">Chat</a>
+                  </li>
+                  <li>
+                    <a href="contact-list.html" class="nav-link  dark:hover:bg-slate-800/70">Contact List</a>
+                  </li>
+                  <li>
+                    <a href="calendar.html" class="nav-link  dark:hover:bg-slate-800/70">Calendar</a>
+                  </li>
+                  <li>
+                    <a href="invoice.html" class="nav-link  dark:hover:bg-slate-800/70">Invoice</a>
+                  </li>
+                  <li>
+                    <a href="notification-manager.html" class="nav-link  dark:hover:bg-slate-800/70">Notification Manager</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                id="navUIkitLink"
+                data-dropdown-toggle="navUIkit"
+                class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0"
+              >
+                <i class="ti ti-planet mr-1 pb-1 text-lg"></i> UI KIt
+                <i class="ti ti-chevron-down ml-auto lg:ml-1"></i>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="navUIkit"
+                class="dropdown-menu z-20 my-1 hidden w-full sm:left-0 sm:right-0 md:left-0 md:right-0 lg:left-0 lg:right-0 xl:left-auto xl:right-auto  xl:max-w-screen-lg list-none divide-y divide-gray-100 rounded bg-gray-800 md:bg-white text-base shadow dark:divide-gray-600 border border-slate-700 md:border-white dark:border-slate-700/50 dark:bg-gray-900
+                bg-[url('../images/widgets/m-p2.png')] bg-no-repeat bg-right-bottom dropdown-menu"
+              >
+                <div class="grid grid-cols-12 gap-4 px-4 pb-4"> 
+                  <div class="col-span-6 md:col-span-3">
+                    <h5 class="font-medium text-base p-4  border-b border-dashed border-slate-500 dark:border-slate-600 md:border-slate-300 text-slate-300 dark:text-slate-500 md:text-slate-700">
+                      <span class="w-8 h-8 rounded-md inline-flex justify-center items-center mr-1 bg-pink-500 bg-opacity-10">
+                        <i class="ti ti-planet text-pink-500"></i>
+                      </span>                  
+                      UI Elements</h5>
+                    <ul class="py-1">
+                      <li>
+                        <a href="ui-alerts.html" class="nav-link  dark:hover:bg-slate-800/70">Alerts</a>
+                      </li>
+                      <li>
+                        <a href="ui-avatars.html" class="nav-link  dark:hover:bg-slate-800/70">Avatars</a>
+                      </li>
+                      <li>
+                        <a href="ui-buttons.html" class="nav-link  dark:hover:bg-slate-800/70">Buttons</a>
+                      </li>
+                      <li>
+                        <a href="ui-budges.html" class="nav-link  dark:hover:bg-slate-800/70">Budges</a>
+                      </li>
+                      <li>
+                        <a href="ui-cards.html" class="nav-link  dark:hover:bg-slate-800/70">Cards</a>
+                      </li>
+                      <li>
+                        <a href="ui-carousels.html" class="nav-link  dark:hover:bg-slate-800/70">Carousels</a>
+                      </li>
+                      <li>
+                        <a href="ui-dropdowns.html" class="nav-link  dark:hover:bg-slate-800/70">Dropdown</a>
+                      </li>
+                      <li>
+                        <a href="ui-images.html" class="nav-link  dark:hover:bg-slate-800/70">Images</a>
+                      </li>
+                      <li>
+                        <a href="ui-lists.html" class="nav-link  dark:hover:bg-slate-800/70">Lists</a>
+                      </li>
+                      <li>
+                        <a href="ui-modals.html" class="nav-link  dark:hover:bg-slate-800/70">Modals</a>
+                      </li>
+                      <li>
+                      <li>
+                        <a href="ui-navbars.html" class="nav-link  dark:hover:bg-slate-800/70">Navbars</a>
+                      </li>
+                      <li>
+                        <a href="ui-paginations.html" class="nav-link  dark:hover:bg-slate-800/70">Paginations</a>
+                      </li>
+                      <li>
+                        <a href="ui-progress.html" class="nav-link  dark:hover:bg-slate-800/70">Progress</a>
+                      </li>
+                      <li>
+                        <a href="ui-tab-accordions.html" class="nav-link  dark:hover:bg-slate-800/70">Tab & Accordions</a>
+                      </li>
+                      <li>
+                        <a href="ui-typography.html" class="nav-link  dark:hover:bg-slate-800/70">Typography</a>
+                      </li>
+                    </ul>                
+                  </div>
+                  <div class="col-span-6 md:col-span-3">
+                    <h5 class="font-medium text-base p-4  border-b border-dashed border-slate-500 dark:border-slate-600 md:border-slate-300 text-slate-300 dark:text-slate-500 md:text-slate-700">
+                      <span class="w-8 h-8 rounded-md inline-flex justify-center items-center mr-1 bg-blue-500 bg-opacity-10">
+                        <i class="ti ti-tent text-blue-500"></i>
+                      </span>                  
+                      Advanced UI</h5>
+                    <ul class="py-1">
+                      <li>
+                        <a href="advanced-animation.html" class="nav-link  dark:hover:bg-slate-800/70">Animation</a>
+                      </li>
+                      <li>
+                        <a href="advanced-clipboard.html" class="nav-link  dark:hover:bg-slate-800/70">Clip Board</a>
+                      </li>
+                      <li>
+                        <a href="advanced-dragula.html" class="nav-link  dark:hover:bg-slate-800/70">Dragula</a>
+                      </li>
+                      <li>
+                        <a href="advanced-files.html" class="nav-link  dark:hover:bg-slate-800/70">File Manager</a>
+                      </li>
+                      <li>
+                        <a href="advanced-highlight.html" class="nav-link  dark:hover:bg-slate-800/70">Highlight</a>
+                      </li>
+                      <li>
+                        <a href="advanced-range-slider.html" class="nav-link  dark:hover:bg-slate-800/70">Range Slider</a>
+                      </li>
+                      <li>
+                        <a href="advanced-ribbons.html" class="nav-link  dark:hover:bg-slate-800/70">Ribbons</a>
+                      </li>
+                      <li>
+                        <a href="advanced-sweet-alerts.html" class="nav-link  dark:hover:bg-slate-800/70">Sweet Alerts</a>
+                      </li>
+                    </ul>
+                    <div>
+                      <h5 class="font-medium text-base p-4  border-b border-dashed border-slate-500 dark:border-slate-600 md:border-slate-300 text-slate-300 dark:text-slate-500 md:text-slate-700">
+                        <span class="w-8 h-8 rounded-md inline-flex justify-center items-center mr-1 bg-purple-500 bg-opacity-10">
+                          <i class="ti ti-columns text-purple-500"></i>
+                        </span>                  
+                        Tables</h5>
+                      <ul class="py-1">
+                        <li>
+                          <a href="tables-basic.html" class="nav-link  dark:hover:bg-slate-800/70">Basic</a>
+                        </li>
+                        <li>
+                          <a href="tables-datatable.html" class="nav-link  dark:hover:bg-slate-800/70">Datatables</a>
+                        </li>
+                        <li>
+                          <a href="tables-editable.html" class="nav-link  dark:hover:bg-slate-800/70">Editable</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div> 
+                  <div class="col-span-6 md:col-span-3">
+                    <h5 class="font-medium text-base p-4  border-b border-dashed border-slate-500 dark:border-slate-600 md:border-slate-300 text-slate-300 dark:text-slate-500 md:text-slate-700">
+                      <span class="w-8 h-8 rounded-md inline-flex justify-center items-center mr-1 bg-yellow-500 bg-opacity-10">
+                        <i class="ti ti-file-report text-yellow-500"></i>
+                      </span>                  
+                      Forms</h5>
+                    <ul class="py-1">
+                      <li>
+                        <a href="forms-elements.html" class="nav-link  dark:hover:bg-slate-800/70">Basic Elements</a>
+                      </li>
+                      <li>
+                        <a href="forms-advanced.html" class="nav-link  dark:hover:bg-slate-800/70">Advance Elements</a>
+                      </li>
+                      <li>
+                        <a href="forms-validation.html" class="nav-link  dark:hover:bg-slate-800/70">Validation</a>
+                      </li>
+                      <li>
+                        <a href="forms-wizard.html" class="nav-link  dark:hover:bg-slate-800/70">Wizard</a>
+                      </li>
+                      <li>
+                        <a href="forms-editors.html" class="nav-link  dark:hover:bg-slate-800/70">Editors</a>
+                      </li>
+                      <li>
+                        <a href="forms-upload.html" class="nav-link  dark:hover:bg-slate-800/70">File Upload</a>
+                      </li>
+                      <li>
+                        <a href="forms-img-crop.html" class="nav-link  dark:hover:bg-slate-800/70">Image Crop</a>
+                      </li>
+                    </ul>
+                    <div>
+                      <h5 class="font-medium text-base p-4  border-b border-dashed border-slate-500 dark:border-slate-600 md:border-slate-300 text-slate-300 dark:text-slate-500 md:text-slate-700">
+                        <span class="w-8 h-8 rounded-md inline-flex justify-center items-center mr-1 bg-orange-500 bg-opacity-10">
+                          <i class="ti ti-box text-orange-500"></i>
+                        </span>                  
+                        Icons</h5>
+                      <ul class="py-1">
+                        <li>
+                          <a href="icons-tabler.html" class="nav-link  dark:hover:bg-slate-800/70">Tabler</a>
+                        </li>
+                        <li>
+                          <a href="icons-fa.html" class="nav-link  dark:hover:bg-slate-800/70">Font Awesome</a>
+                        </li>
+                        <li>
+                          <a href="icons-md.html" class="nav-link  dark:hover:bg-slate-800/70">Material Design</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-span-6 md:col-span-3">
+                    <h5 class="font-medium text-base p-4  border-b border-dashed border-slate-500 dark:border-slate-600 md:border-slate-300 text-slate-300 dark:text-slate-500 md:text-slate-700">
+                      <span class="w-8 h-8 rounded-md inline-flex justify-center items-center mr-1 bg-teal-500 bg-opacity-10">
+                        <i class="ti ti-chart-infographic text-teal-500"></i>
+                      </span>                  
+                      Charts</h5>
+                    <ul class="py-1">
+                      <li>
+                        <a href="charts-apex.html" class="nav-link  dark:hover:bg-slate-800/70">Apex</a>
+                      </li>
+                      <li>
+                        <a href="charts-echart.html" class="nav-link  dark:hover:bg-slate-800/70">Echart</a>
+                      </li>
+                      <li>
+                        <a href="charts-chartjs.html" class="nav-link  dark:hover:bg-slate-800/70">Chartjs</a>
+                      </li>
+                    </ul>
+                    <div>
+                      <h5 class="font-medium text-base p-4  border-b border-dashed border-slate-500 dark:border-slate-600 md:border-slate-300 text-slate-300 dark:text-slate-500 md:text-slate-700">
+                        <span class="w-8 h-8 rounded-md inline-flex justify-center items-center mr-1 bg-slate-500 bg-opacity-10">
+                          <i class="ti ti-map-pin text-slate-500"></i>
+                        </span>                  
+                        Maps</h5>
+                      <ul class="py-1">
+                        <li>
+                          <a href="maps-google.html" class="nav-link  dark:hover:bg-slate-800/70">Google Maps</a>
+                        </li>
+                        <li>
+                          <a href="maps-leaflet.html" class="nav-link  dark:hover:bg-slate-800/70">Leaflet Maps</a>
+                        </li>
+                        <li>
+                          <a href="maps-vector.html" class="nav-link  dark:hover:bg-slate-800/70">Vector Maps</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+            </li>
+            <li class="dropdown"> 
+              <button
+                id="navPagesLink"
+                data-dropdown-toggle="navPages"
+                class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0"
+              >
+                <i class="ti ti-file-diff mr-1 pb-1 text-lg"></i> Pages
+                <i class="ti ti-chevron-down ml-auto lg:ml-1"></i>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="navPages"
+                class="dropdown-menu z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-gray-800 md:bg-white text-base shadow dark:divide-gray-600 border border-slate-700 md:border-white dark:border-slate-700/50 dark:bg-gray-900 md:w-44 dropdown-menu"
+              >
+                <ul class="py-1">
+                  <li>
+                    <a href="starter.html" class="nav-link  dark:hover:bg-slate-800/70">Starter</a>
+                  </li>
+                  <li>
+                    <a href="profile.html" class="nav-link  dark:hover:bg-slate-800/70">Profile</a>
+                  </li>
+                  <li>
+                    <a href="timeline.html" class="nav-link  dark:hover:bg-slate-800/70">Timeline</a>
+                  </li>
+                  <li>
+                    <a href="pricing.html" class="nav-link  dark:hover:bg-slate-800/70">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="blogs.html" class="nav-link  dark:hover:bg-slate-800/70">Blogs</a>
+                  </li>
+                  <li>
+                    <a href="faqs.html" class="nav-link  dark:hover:bg-slate-800/70">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                id="navAuthLink"
+                data-dropdown-toggle="navAuth"
+                class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0"
+              >
+                <i class="ti ti-shield-lock mr-1 pb-1 text-lg"></i> Authentication
+                <i class="ti ti-chevron-down ml-auto lg:ml-1"></i>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="navAuth"
+                class="dropdown-menu z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-gray-800 md:bg-white text-base shadow dark:divide-gray-600 border border-slate-700 md:border-white dark:border-slate-700/50 dark:bg-gray-900 md:w-44 dropdown-menu"
+              >
+                <ul class="py-1">
+                  <li>
+                    <a href="login.html" class="nav-link  dark:hover:bg-slate-800/70">Log In</a>
+                  </li>
+                  <li>
+                    <a href="register.html" class="nav-link  dark:hover:bg-slate-800/70">Register</a>
+                  </li>
+                  <li>
+                    <a href="re-password.html" class="nav-link  dark:hover:bg-slate-800/70">Re-Password</a>
+                  </li>
+                  <li>
+                    <a href="lock-screen.html" class="nav-link  dark:hover:bg-slate-800/70">Lock Screen</a>
+                  </li>
+                  <li>
+                    <a href="404.html" class="nav-link  dark:hover:bg-slate-800/70">Error 404</a>
+                  </li>
+                  <li>
+                    <a href="500.html" class="nav-link  dark:hover:bg-slate-800/70">Error 500</a>
+                  </li>
+                </ul>            
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="order-1 ml-auto flex items-center md:order-2">
+          <div class="relative mr-2 hidden lg:mr-4 lg:block">
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+              <i class="ti ti-search text-gray-400 z-10"></i>
+            </div>
+            <input
+              type="text"
+              id="email-adress-icon"
+              class="block w-full rounded-lg border border-gray-700 bg-gray-900 p-2 pl-10 text-gray-300 outline-none focus:border-gray-700 focus:ring-gray-700 dark:bg-slate-800 sm:text-sm"
+              placeholder="Search..."
+            />
+          </div>
+          <div class="mr-2 lg:mr-4">
+            <button id="toggle-theme" class="flex rounded-full md:mr-0 relative">
+              <i class="ti ti-sun top-icon"></i>
+            </button>
+          </div>
+          <div class="mr-2 lg:mr-4 dropdown relative">
+            <button
+              type="button"
+              class="dropdown-toggle flex rounded-full md:mr-0"
+              id="Notifications"
+              aria-expanded="false"
+              data-dropdown-toggle="navNotifications"
+            >
+              <i class="ti ti-bell text-2xl text-gray-400"></i>
+            </button> 
+
+            <div
+              class="dropdown-menu dropdown-menu-right z-50 my-1 hidden w-64 list-none divide-y h-52 divide-gray-100 rounded border-slate-700 md:border-white text-base shadow dark:divide-gray-600 bg-white dark:bg-slate-800"
+              id="navNotifications" data-simplebar
+            >
+              <ul class="py-1" aria-labelledby="navNotifications">
+                <li class="py-2 px-4">
+                  <a href="javascript:void(0);" class="dropdown-item">
+                    <div class="flex align-items-start">
+                        <img class="object-cover rounded-full h-8 w-8 shrink-0 mr-3" src="assets/images/users/avatar-2.jpg" alt="logo" />
+                        <div class="flex-grow ml-0.5 overflow-hidden">
+                            <p class="text-sm font-medium text-gray-800 truncate dark:text-gray-300">Karen Robinson</p>
+                            <p class="text-gray-500 mb-0 text-xs  truncate dark:text-gray-400">
+                                Hey ! i'm available here
+                            </p>
+                        </div>
+                    </div>
+                  </a>              
+                </li>
+                <li class="py-2 px-4">
+                  <a href="javascript:void(0);" class="dropdown-item">
+                    <div class="flex align-items-start">
+                        <img class="object-cover rounded-full h-8 w-8 shrink-0 mr-3" src="assets/images/users/avatar-3.jpg" alt="logo" />
+                        <div class="flex-grow ml-0.5 overflow-hidden">
+                            <p class="text-sm font-medium text-gray-800 truncate dark:text-gray-300">Your order is placed</p>
+                            <p class="text-gray-500 mb-0 text-xs  truncate dark:text-gray-400">
+                              Dummy text of the printing and industry.
+                            </p>
+                        </div>
+                    </div>
+                  </a>     
+                </li>
+                <li class="py-2 px-4">
+                  <a href="javascript:void(0);" class="dropdown-item">
+                    <div class="flex align-items-start">
+                        <img class="object-cover rounded-full h-8 w-8 shrink-0 mr-3" src="assets/images/users/avatar-9.jpg" alt="logo" />
+                        <div class="flex-grow ml-0.5 overflow-hidden">
+                            <p class="text-sm font-medium text-gray-800 truncate dark:text-gray-300">Robert McCray</p>
+                            <p class="text-gray-500 mb-0 text-xs  truncate dark:text-gray-400">
+                                Good Morning!
+                            </p>
+                        </div>
+                    </div>
+                  </a>     
+                </li>
+                <li class="py-2 px-4">
+                  <a href="javascript:void(0);" class="dropdown-item">
+                    <div class="flex align-items-start">
+                        <img class="object-cover rounded-full h-8 w-8 shrink-0 mr-3" src="assets/images/users/avatar-6.jpg" alt="logo" />
+                        <div class="flex-grow ml-0.5 overflow-hidden">
+                            <p class="text-sm font-medium text-gray-800 truncate dark:text-gray-300">Meeting with designers</p>
+                            <p class="text-gray-500 mb-0 text-xs  truncate dark:text-gray-400">
+                              It is a long established fact that a reader.
+                            </p>
+                        </div>
+                    </div>
+                  </a>     
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-2 lg:mr-0 dropdown relative"> 
+            <button
+              type="button"
+              class="dropdown-toggle flex items-center rounded-full text-sm focus:bg-none focus:ring-0 dark:focus:ring-0 md:mr-0"
+              id="user-profile"
+              aria-expanded="false"
+              data-dropdown-toggle="navUserdata"
+            >
+              <img
+                class="h-8 w-8 rounded-full"
+                src="assets/images/users/avatar-1.jpg"
+                alt="user photo"
+              />
+              <span class="ml-2 hidden text-left xl:block">
+                <span class="block font-medium text-gray-400">Maria Gibson</span>
+                <span class="-mt-1 block text-sm font-medium text-gray-500"
+                  >Admin</span
+                >
+              </span>
+            </button>
+
+            <div
+              class="dropdown-menu dropdown-menu-right z-50 my-1 hidden list-none divide-y divide-gray-100 rounded border-slate-700 md:border-white text-base shadow dark:divide-gray-600 bg-white dark:bg-slate-800"
+              id="navUserdata"
+            >
+              <div class="py-3 px-4">
+                <span
+                  class="block text-sm font-medium text-gray-900 dark:text-white"
+                  >Bonnie Green</span
+                >
+                <span
+                  class="block truncate text-sm font-normal text-gray-500 dark:text-gray-400"
+                  >name@flowbite.com</span
+                >
+              </div>
+              <ul class="py-1" aria-labelledby="navUserdata">
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-900/20 dark:hover:text-white"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-900/20 dark:hover:text-white"
+                    >Settings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-900/20 dark:hover:text-white"
+                    >Earnings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-900/20 dark:hover:text-white"
+                    >Sign out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button
+            data-collapse-toggle="mobile-menu-2"
+            type="button" id="toggle-menu"
+            class="ml-1 inline-flex items-center rounded-lg text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-0 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+            aria-controls="mobile-menu-2"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <i class="ti ti-menu-2 h-6 w-6 text-lg leading-6"></i>
+            <i class="ti ti-X hidden h-6 w-6 text-lg leading-6"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container  mx-auto px-2">        
+        <div class="flex flex-wrap">
+            <div class="flex items-center py-4 w-full">
+                <div class="w-full">                    
+                    <div class="">
+                        <div class="flex flex-wrap justify-between">
+                            <div class="items-center ">
+                                <h1 class="font-semibold text-xl mb-0 block dark:text-slate-100">Inbox</h1>
+                                <ol class="list-reset flex text-sm">
+                                    <li><a href="#" class="text-gray-500">T-Wind</a></li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-gray-500">Apps</li>
+                                    <li><span class="text-gray-500 mx-2">/</span></li>
+                                    <li class="text-blue-600 hover:text-blue-700">Inbox</li>
+                                </ol>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)]  relative pb-14 ">         
+        <div class="grid lg:grid-cols-12 gap-4">
+            <div class="col-span-12 lg:col-span-3 mb-4">
+                <div class="card h-full">
+                    <div class="card-header p-0 border-0"> 
+                        <div class="border-b border-dashed border-gray-200 dark:border-gray-700 flex flex-wrap justify-center">                            
+                            <ul class="-mb-px grid grid-cols-3 place-content-stretch w-full" id="myTab" data-tabs-toggle="#EmailBox" role="tablist">
+                                <li class="mr-2 flex items-center col-span-1 md:col-span-1 lg:col-span-3 xl:col-span-1" role="presentation">
+                                    <button class="flex items-center w-full py-3 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300" id="Inbox-tab" data-tabs-target="#Inbox" type="button" role="tab" aria-controls="Inbox" aria-selected="true"><i class="ti ti-mail mr-1 text-xl -mt-1"></i>Mail</button>
+                                </li>
+                                <li class="mr-2" role="presentation col-span-1 md:col-span-1 lg:col-span-3 xl:col-span-1">
+                                    <button class="flex items-center w-full py-3 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300" id="UserChat-tab" data-tabs-target="#UserChat" type="button" role="tab" aria-controls="UserChat" aria-selected="false"><i class="ti ti-message-dots mr-1 text-xl -mt-1"></i>Chat</button>
+                                </li>
+                                <li class="mr-2" role="presentation col-span-1 md:col-span-1 lg:col-span-3 xl:col-span-1">
+                                    <button class="flex items-center w-full py-3 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300" id="Meeting-tab" data-tabs-target="#Meeting" type="button" role="tab" aria-controls="Meeting" aria-selected="false"><i class="ti ti-video mr-1 text-xl -mt-1"></i>Meeting</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <div id="EmailBox">
+                            <div class="" id="Inbox" role="tabpanel" aria-labelledby="Inbox-tab">
+                                <div class="">
+                                    <button class="px-3 py-2 lg:px-4 w-full mb-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">Compose</button>
+                                    <a href="javascript:void(0)" class="list-group-item border-0 text-blue dark:text-blue font-medium p-2 rounded-md bg-slate-50 dark:bg-slate-700 dark:text-slate-300  active flex justify-between">
+                                        <span>
+                                            <i class="text-lg ti ti-inbox mr-2"></i>Inbox
+                                        </span>
+                                        <span class="focus:outline-none border border-orange-300 text-[11px] bg-orange-50 text-orange-500 rounded font-medium py-0.5 px-2 self-center">8</span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item block border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"> <i class="text-lg ti ti-star mr-2"></i>Starred </a>
+                                    <a href="javascript:void(0)" class="list-group-item block border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"> <i class="text-lg ti ti-clock mr-2"></i>Snoozed </a>
+                                    <a href="javascript:void(0)" class="list-group-item block border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"> <i class="text-lg ti ti-tag mr-2"></i>Important </a>
+                                    <a href="javascript:void(0)" class="list-group-item block border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"> <i class="text-lg ti ti-send mr-2"></i>Sent </a>
+                                    <a href="javascript:void(0)" class="list-group-item border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 flex justify-between">
+                                        <span>
+                                            <i class="text-lg ti ti-file mr-2"></i>Draft
+                                        </span>
+                                        <span class="focus:outline-none border border-slate-300 text-[11px] bg-slate-50 text-slate-500 rounded font-medium py-0.5 px-2 self-center">2</span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item block border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"> <i class="text-lg ti ti-calendar-stats mr-2"></i>Scheduled </a>
+                                    <a href="javascript:void(0)" class="list-group-item block border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"> <i class="text-lg ti ti-alert-octagon mr-2"></i>Spam </a>
+                                    <a href="javascript:void(0)" class="list-group-item block border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"> <i class="text-lg ti ti-mail mr-2"></i>All Mail </a>
+                                    <a href="javascript:void(0)" class="list-group-item block border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"> <i class="text-lg ti ti-trash mr-2"></i>Trash </a>
+                                </div>
+                                <a href="" class="font-medium text-base my-5 block dark:text-slate-200">Labels +</a>
+                                <div>
+                                    <a href="javascript:void(0)" class="list-group-item border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 flex justify-between">
+                                        <span>
+                                            <i class="text-lg ti ti-file mr-2"></i>Theme Support
+                                        </span>
+                                        <span class="focus:outline-none border border-cyan-500 bg-cyan-500 text-white rounded-full w-3 h-3 justify-center items-center self-center flex text-center"><i class="fas fa-caret-right text-[10px]"></i></span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 flex justify-between">
+                                        <span>
+                                            <i class="text-lg ti ti-briefcase mr-2"></i>Freelance
+                                        </span>
+                                        <span class="focus:outline-none border border-yellow-400 bg-yellow-400 text-white rounded-full w-3 h-3 justify-center items-center self-center flex text-center"><i class="fas fa-caret-right text-[10px]"></i></span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 flex justify-between">
+                                        <span>
+                                            <i class="text-lg ti ti-brand-whatsapp mr-2"></i>Social
+                                        </span>
+                                        <span class="focus:outline-none border border-purple-400 bg-purple-400 text-white rounded-full w-3 h-3 justify-center items-center self-center flex text-center"><i class="fas fa-caret-right text-[10px]"></i></span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 flex justify-between">
+                                        <span>
+                                            <i class="text-lg ti ti-users mr-2"></i>Friends
+                                        </span>
+                                        <span class="focus:outline-none border border-pink-500 bg-pink-500 text-white rounded-full w-3 h-3 justify-center items-center self-center flex text-center"><i class="fas fa-caret-right text-[10px]"></i></span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item border-0 p-2 text-slate-400 rounded-md  hover:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 flex justify-between">
+                                        <span>
+                                            <i class="text-lg ti ti-home-2 mr-2"></i>Family
+                                        </span>
+                                        <span class="focus:outline-none border border-green-500 bg-green-500 text-white rounded-full w-3 h-3 justify-center items-center self-center flex text-center"><i class="fas fa-caret-right text-[10px]"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hidden" id="UserChat" role="tabpanel" aria-labelledby="UserChat-tab">
+                                <div id="accordion-collapse" data-accordion="collapse">
+                                    <h2 id="accordion-collapse-heading-1">
+                                        <button type="button" class=" p-4 w-full font-medium text-left text-gray-500 rounded-t-md border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-toggle='collapse' href="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                            <div class="relative">
+                                                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                                    <i class="fas fa-search z-[1]"></i> 
+                                                </div>
+                                                <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Name, Email or Phone">
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-collapse-body-1" class="show" aria-labelledby="accordion-collapse-heading-1">
+                                      <div class="p-4 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-8 h-8 rounded">
+                                                <img class="w-full h-full overflow-hidden object-cover rounded object-center" src="assets/images/users/avatar-3.jpg" alt="logo" />
+                                            </div>
+                                            <div class="ml-2">
+                                                <a tabindex="0" class="cursor-pointer hover:text-gray-500 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none focus:underline"><h5 class=" font-medium text-sm">Donald Gonzalez</h5></a>
+                                                <p tabindex="0" class="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium">Ontario, Canada</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-8 h-8 rounded">
+                                                <img class="w-full h-full overflow-hidden object-cover rounded object-center" src="assets/images/users/avatar-2.jpg" alt="logo" />
+                                            </div>
+                                            <div class="ml-2">
+                                                <a tabindex="0" class="cursor-pointer hover:text-gray-500 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none focus:underline"><h5 class=" font-medium text-sm">Ronald Young</h5></a>
+                                                <p tabindex="0" class="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium">New york, USA</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-8 h-8 rounded">
+                                                <img class="w-full h-full overflow-hidden object-cover rounded object-center" src="assets/images/users/avatar-4.jpg" alt="logo" />
+                                            </div>
+                                            <div class="ml-2">
+                                                <a tabindex="0" class="cursor-pointer hover:text-gray-500 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none focus:underline"><h5 class=" font-medium text-sm">Leslie Dunham</h5></a>
+                                                <p tabindex="0" class="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium">San Diego, California</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h2 id="accordion-collapse-heading-2">
+                                      <button type="button" class="flex justify-between items-center p-4 w-full font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-toggle='collapse' href="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                                        <span><i class="fas fa-users mr-2"></i>Create Space</span>
+                                        <i class="fas fa-angle-up" data-accordion-icon></i>
+                                      </button>
+                                    </h2>
+                                    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                                      <div class="p-4 border border-b-0 border-gray-200 dark:border-gray-700">
+                                       <span class="text-slate-400 uppercase">Add Data</span>
+                                      </div>
+                                    </div>
+                                    <h2 id="accordion-collapse-heading-3">
+                                      <button type="button" class="flex justify-between items-center p-4 w-full font-medium text-left text-gray-500 border border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"  data-toggle='collapse' href="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                        <span><i class="far fa-comments mr-2"></i>Message Requests</span>
+                                        <i class="fas fa-angle-up" data-accordion-icon></i>
+                                      </button>
+                                    </h2>
+                                    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                                      <div class="p-4 border border-t-0 border-gray-200 dark:border-gray-700">
+                                        <span class="text-slate-400 uppercase">Add Data</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div> 
+                            <div class="hidden" id="Meeting" role="tabpanel" aria-labelledby="Meeting-tab">
+                                <div class="gap-4 grid grid-cols-2">
+                                    <button class="col-span-1 text-blue-700 bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 text-sm md:text-sm lg:text-xs
+                                        font-medium py-2 w-full">
+                                        New Meeting
+                                    </button>
+                                    <button class="col-span-1 text-blue-700 bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 text-sm md:text-sm lg:text-xs
+                                    font-medium py-2 w-full">
+                                        Join a Meeting
+                                    </button>
+                                </div>
+                                <h6 class="uppercase text-slate-600 mt-4 text-sm font-medium">My Meeting</h6>
+                            </div>
+                        </div>
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+            </div><!--end col-->
+            <div class="col-span-12 lg:col-span-9">
+                <div class="card mb-4">
+                    <div class="p-4 grid grid-cols-12 gap-4">                        
+                        <div class="space-x-1 col-span-12 sm:col-span-9 md:col-span-5 lg:col-span-5 order-1 md:order-1">
+                            <div class="inline-flex rounded-md" role="group">
+                                <button type="button" class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                                    <i class="ti ti-inbox text-base"></i>
+                                </button>
+                                <button type="button" class="py-1 px-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                                  <i class="ti ti-exclamation-mark text-base"></i>
+                                </button>
+                                <button type="button" class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                                    <i class="ti ti-trash text-base"></i>
+                                </button>
+                            </div>
+                            <button
+                                id="Folder"
+                                data-dropdown-toggle="Folderdrop"
+                                class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+                                >
+                                    <i class="ti ti-folder mr-1 text-base"></i>
+                                    <i class="ti ti-chevron-down text-sm ml-auto"></i>
+                            </button>
+                                <!-- Dropdown menu -->
+                                <div
+                                    id="Folderdrop"
+                                    class="z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700 md:w-44"
+                                >
+                                <ul class="py-1" aria-labelledby="Folder">
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Update</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Social</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Team Manage</a> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <button
+                                id="Tag"
+                                data-dropdown-toggle="Tagdrop"
+                                class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+                                >
+                                    <i class="ti ti-tag mr-1 text-base"></i>
+                                    <i class="ti ti-chevron-down text-sm ml-auto"></i>
+                            </button>
+                                <!-- Dropdown menu -->
+                            <div
+                                id="Tagdrop"
+                                class="z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700 md:w-44"
+                            >
+                                <ul class="py-1" aria-labelledby="Tag">
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Update</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Social</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Team Manage</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button
+                                id="More"
+                                data-dropdown-toggle="Moredrop"
+                                class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+                                >
+                                <i class="ti ti-plus  text-base"></i>
+                            </button>
+                                <!-- Dropdown menu -->
+                            <div
+                                id="Moredrop"
+                                class="z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700 md:w-44"
+                            >
+                                <ul class="py-1" aria-labelledby="More">
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mark as read</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mark as Important</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Add to Tasks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Add Star</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mute</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="relative ml-0  md:ml-2 col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 order-3 md:order-2">
+                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                <i class="ti ti-search text-base z-[1] dark:text-slate-500"></i>
+                            </div>
+                            <input type="text" class="border border-gray-200  text-gray-900 text-sm rounded-md  focus:border-blue-500 block w-full pl-10 p-[6px] dark:bg-slate-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white   focus:outline-hidden focus-visible:outline-none" placeholder="Search mail">
+                        </div>
+                        <div class="mr-auto md:ml-auto md:mr-0 text-right inline-block col-span-12  sm:col-span-3 md:col-span-2 lg:col-span-2 order-2 md:order-3">
+                            <button
+                                id="Question"
+                                data-dropdown-toggle="Questiondrop"
+                                class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+                                >
+                                <i class="ti ti-question-mark  text-base"></i>
+                            </button>
+                                <!-- Dropdown menu -->
+                            <div
+                                id="Questiondrop"
+                                class="z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700 md:w-44"
+                            >
+                                <ul class="py-1" aria-labelledby="Question">
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mark as read</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mark as Important</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Add to Tasks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Add Star</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mute</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button
+                                id="Settings"
+                                data-dropdown-toggle="Settingsdrop"
+                                class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+                                >
+                                <i class="ti ti-settings  text-base"></i>
+                            </button>
+                                <!-- Dropdown menu -->
+                            <div
+                                id="Settingsdrop"
+                                class="z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700 md:w-44"
+                            >
+                                <ul class="py-1" aria-labelledby="Settings">
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mark as read</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mark as Important</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Add to Tasks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Add Star</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-menu-item">Mute</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end card-header-->
+                    <div class="card-body">
+                        <ul class="">
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-1" type="checkbox" name="checkbox-1" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" checked />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">
+                                            <span class="truncate">me, Susanna (7)</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> <span class="focus:outline-none border border-orange-300 text-[11px] bg-orange-50 text-orange-500 rounded font-medium py-0.5 px-2 mr-1">Freelance</span>Since you asked... and i'm
+                                            inconceivably bored at the train station &nbsp;–&nbsp;
+                                            <span class="teaser">Alright thanks. I'll have to re-book that somehow, i'll get back to you.</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 6</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-2" type="checkbox" name="checkbox-2" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Hello &nbsp;–&nbsp; <span class="teaser">Trip home from 🎉 Colombo has been arranged, then Jenna will come get me from Stockholm. :)</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 5</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 dark:text-slate-200 hover:bg-slate-50 bg-white dark:bg-slate-700 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md unread">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-3" type="checkbox" name="checkbox-3" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600" checked>
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Web Support Dennis</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Re: New mail settings &nbsp;–&nbsp;
+                                            <span class="">Will you answer him asap?</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 5</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-4" type="checkbox" name="checkbox-4" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600" checked>
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Me, peter</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"><span class="focus:outline-none border border-cyan-300 text-[11px] bg-cyan-50 text-cyan-500 rounded font-medium py-0.5 px-2 mr-1">Support</span> Off on Thursday &nbsp;–&nbsp;
+                                            <span class="">Eff that place, you might as well stay here with us instead! Sent from my iPhone 4 &gt; 4 mar 2014 at 5:55 pm</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 4</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-5" type="checkbox" name="checkbox-5" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"><span class="focus:outline-none border border-blue-300 text-[11px] bg-blue-50 text-blue-500 rounded font-medium py-0.5 px-2 mr-1">Social</span> This Week's Top Stories &nbsp;–&nbsp;
+                                            <span class="teaser">Our top pick for you on Medium this week The Man Who Destroyed America’s Ego</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 3</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-6" type="checkbox" name="checkbox-6" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Hello &nbsp;–&nbsp; <span class="teaser">Trip home from Colombo has been arranged, then Jenna will 🎁 come get me from Stockholm. :)</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 3</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-7" type="checkbox" name="checkbox-7" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600" checked>
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" checked/>
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Web Support Dennis</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Re: New mail settings &nbsp;–&nbsp;
+                                            <span class="">Will you answer him asap? 👌</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 2</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-8" type="checkbox" name="checkbox-8" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600" checked>
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Me, peter</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"><span class="focus:outline-none border border-cyan-300 text-[11px] bg-cyan-50 text-cyan-500 rounded font-medium py-0.5 px-2 mr-1">Support</span> Off on Thursday &nbsp;–&nbsp;
+                                            <span class="">Eff that place, you might as well stay here with us instead! Sent from my iPhone 4 &gt; 4 mar 2014 at 5:55 pm</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 2</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-9" type="checkbox" name="checkbox-9" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"><span class="focus:outline-none border border-blue-300 text-[11px] bg-blue-50 text-blue-500 rounded font-medium py-0.5 px-2 mr-1">Social</span> This Week's Top Stories &nbsp;–&nbsp;
+                                            <span class="teaser">Our top pick for you on Medium this week The Man Who Destroyed America’s Ego</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 1</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-10" type="checkbox" name="checkbox-10" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Hello &nbsp;–&nbsp; <span class="teaser">🏏 Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 1</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-11" type="checkbox" name="checkbox-11" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">
+                                            <span class="truncate">me, Susanna (7)</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> <span class="focus:outline-none border border-orange-300 text-[11px] bg-orange-50 text-orange-500 rounded font-medium py-0.5 px-2 mr-1">Freelance</span>Since you asked... and i'm
+                                            inconceivably bored at the train station &nbsp;–&nbsp;
+                                            <span class="teaser">Alright thanks. I'll have to re-book that somehow, i'll get back to you.</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 6</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-12" type="checkbox" name="checkbox-12" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Hello &nbsp;–&nbsp; <span class="teaser">Trip home from 🎉 Colombo has been arranged, then Jenna will come get me from Stockholm. :)</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 5</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-13" type="checkbox" name="checkbox-13" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600" checked>
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Web Support Dennis</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Re: New mail settings &nbsp;–&nbsp;
+                                            <span class="">Will you answer him asap?</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 5</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-14" type="checkbox" name="checkbox-14" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600" checked>
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Me, peter</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"><span class="focus:outline-none border border-cyan-300 text-[11px] bg-cyan-50 text-cyan-500 rounded font-medium py-0.5 px-2 mr-1">Support</span> Off on Thursday &nbsp;–&nbsp;
+                                            <span class="">Eff that place, you might as well stay here with us instead! Sent from my iPhone 4 &gt; 4 mar 2014 at 5:55 pm</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 4</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-15" type="checkbox" name="checkbox-15" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"><span class="focus:outline-none border border-blue-300 text-[11px] bg-blue-50 text-blue-500 rounded font-medium py-0.5 px-2 mr-1">Social</span> This Week's Top Stories &nbsp;–&nbsp;
+                                            <span class="teaser">Our top pick for you on Medium this week The Man Who Destroyed America’s Ego</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 3</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-16" type="checkbox" name="checkbox-16" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Hello &nbsp;–&nbsp; 
+                                               <span class="teaser">Trip home from Colombo has been arranged, then Jenna will 🎁 come get me from Stockholm. :)
+                                               </span>
+                                            </p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 3</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-17" type="checkbox" name="checkbox-17" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600" checked>
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Web Support Dennis</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> Re: New mail settings &nbsp;–&nbsp;
+                                            <span class="">Will you answer him asap? 👌</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 2</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-18" type="checkbox" name="checkbox-18" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600" checked>
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Me, peter</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"><span class="focus:outline-none border border-cyan-300 text-[11px] bg-cyan-50 text-cyan-500 rounded font-medium py-0.5 px-2 mr-1">Support</span> Off on Thursday &nbsp;–&nbsp;
+                                            <span class="">Eff that place, you might as well stay here with us instead! Sent from my iPhone 4 &gt; 4 mar 2014 at 5:55 pm</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 2</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-19" type="checkbox" name="checkbox-19" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"><span class="focus:outline-none border border-blue-300 text-[11px] bg-blue-50 text-blue-500 rounded font-medium py-0.5 px-2 mr-1">Social</span> This Week's Top Stories &nbsp;–&nbsp;
+                                            <span class="teaser">Our top pick for you on Medium this week The Man Who Destroyed America’s Ego</span></p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 1</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                            <li class="text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-200 p-3 rounded-md">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                                        <div class="inline-block mr-4 relative top-1">
+                                            <input id="checkbox-20" type="checkbox" name="checkbox-20" value="1"
+                                            class="custom w-5 h-5 text-blue-600 rounded border-gray-300 
+                                             -mt-1
+                                            focus:ring-transparent dark:border-gray-600">
+                                        </div>
+                                        <label class="custom-checkbox mb-0 self-center">
+                                            <input type="checkbox" />
+                                            <i class="far fa-star text-base text-slate-400 -mt-1 unchecked"></i>
+                                            <i class="fas fa-star text-base -mt-1 text-yellow-400 checked"></i>               
+                                        </label>
+                                    </div>  
+                                    <div class="col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
+                                        <a href="#" class="">                                            
+                                            <span class="truncate">Peter, me</span>
+                                        </a>
+                                    </div> 
+                                    <div class="col-span-8 md:col-span-6 lg:col-span-7 xl:col-span-8 hidden md:block pr-10">
+                                        <a href="#" class="">
+                                           <p class="truncate"> 
+                                               Hello &nbsp;–&nbsp; 
+                                               <span class="teaser">🏏 Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</span>
+                                            </p>
+                                        </a>
+                                    </div>  
+                                    <div class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1 text-right">
+                                        <span class="text-sm text-slate-500">Mar. 1</span>
+                                    </div>                                     
+                                </div>
+                            </li><!--end /li-->
+                        </ul><!--end /ul-->
+                    </div><!--end card-body-->
+                </div> <!--end card-->
+                <div class="flex justify-between mb-4">
+                    <div class="self-center">
+                        <p class="dark:text-slate-400">Showing 1 - 20 of 1,524</p>
+                    </div>
+                    <div class="self-center">
+                        <div class="inline-flex rounded-md" role="group">
+                            <button type="button" class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-r-0 border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                                <i class="ti ti-chevron-left text-base"></i>
+                            </button>
+                            <button type="button" class="py-1 px-2 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                                <i class="ti ti-chevron-right text-base"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end inner-grid-->
+        <!-- footer -->
+        <div class="absolute bottom-0 left-2 right-2 block print:hidden">
+          <div class="container mx-auto">
+            <!-- Footer Start -->
+            <footer
+              class="footer mt-4 rounded-tr-md rounded-tl-md bg-white dark:bg-slate-800 p-4 text-center font-medium text-slate-600 dark:text-slate-400 shadow md:text-left"
+            >
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              T-Wind
+              <span class="float-right hidden text-slate-600 dark:text-slate-400 md:inline-block"
+                >Crafted with <i class="ti ti-heart text-red-500"></i> by
+                Mannatthemes</span
+              >
+            </footer>
+            <!-- end Footer -->
+          </div>
+        </div>
+
+     
+    </div><!--end container-->
+
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/pages/components.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+</body>
+
+</html>
